@@ -1,0 +1,176 @@
+
+CUDA matrix multiplication run: 2026-09-01T18:22:40.622233+00:00
+Matrix size: 256 x 256
+Repetitions: 3
+Threads per block: 16 x 16 = 256
+
+Median CPU time (ms): 5.840829
+Median GPU kernel time (ms): 0.092512
+Median H2D+D2H time (ms): 0.259616
+Median GPU end-to-end time (ms): 0.352352
+End-to-end speedup: 16.576687x
+Maximum absolute error: 0.00001526
+Maximum relative error: 0.00000024
+Correctness: PASS
+RESULT,256,5.840829,0.092512,0.259616,0.352352,16.576687,0.00001526,0.00000024,PASS
+
+Matrix size: 1024 x 1024
+Repetitions: 3
+Threads per block: 16 x 16 = 256
+
+Median CPU time (ms): 211.107369
+Median GPU kernel time (ms): 3.672608
+Median H2D+D2H time (ms): 2.871744
+Median GPU end-to-end time (ms): 6.544352
+End-to-end speedup: 32.257948x
+Maximum absolute error: 0.00006104
+Maximum relative error: 0.00000024
+Correctness: PASS
+RESULT,1024,211.107369,3.672608,2.871744,6.544352,32.257948,0.00006104,0.00000024,PASS
+
+Matrix size: 4096 x 4096
+Repetitions: 3
+Threads per block: 16 x 16 = 256
+
+Median CPU time (ms): 26343.525959
+Median GPU kernel time (ms): 198.346207
+Median H2D+D2H time (ms): 44.196640
+Median GPU end-to-end time (ms): 242.557846
+End-to-end speedup: 108.607190x
+Maximum absolute error: 0.00122070
+Maximum relative error: 0.00000124
+Correctness: PASS
+RESULT,4096,26343.525959,198.346207,44.196640,242.557846,108.607190,0.00122070,0.00000124,PASS
+
+
+CUDA matrix multiplication run: 2026-09-01T18:24:32.058648+00:00
+Matrix size: 256 x 256
+Repetitions: 3
+Threads per block: 16 x 16 = 256
+
+Median CPU time (ms): 6.212346
+Median GPU kernel time (ms): 0.114688
+Median H2D+D2H time (ms): 0.264800
+Median GPU end-to-end time (ms): 0.380768
+End-to-end speedup: 16.315304x
+Maximum absolute error: 0.00001526
+Maximum relative error: 0.00000024
+Correctness: PASS
+RESULT,256,6.212346,0.114688,0.264800,0.380768,16.315304,0.00001526,0.00000024,PASS
+
+Matrix size: 1024 x 1024
+Repetitions: 3
+Threads per block: 16 x 16 = 256
+
+Median CPU time (ms): 373.067132
+Median GPU kernel time (ms): 3.672896
+Median H2D+D2H time (ms): 2.986560
+Median GPU end-to-end time (ms): 6.657856
+End-to-end speedup: 56.034127x
+Maximum absolute error: 0.00006104
+Maximum relative error: 0.00000024
+Correctness: PASS
+RESULT,1024,373.067132,3.672896,2.986560,6.657856,56.034127,0.00006104,0.00000024,PASS
+
+Matrix size: 4096 x 4096
+Repetitions: 3
+Threads per block: 16 x 16 = 256
+
+Median CPU time (ms): 25703.000808
+Median GPU kernel time (ms): 199.051712
+Median H2D+D2H time (ms): 46.308193
+Median GPU end-to-end time (ms): 246.620766
+End-to-end speedup: 104.220749x
+Maximum absolute error: 0.00122070
+Maximum relative error: 0.00000124
+Correctness: PASS
+RESULT,4096,25703.000808,199.051712,46.308193,246.620766,104.220749,0.00122070,0.00000124,PASS
+
+
+CUDA matrix multiplication run: 2026-09-01T18:28:04.358802+00:00
+Matrix size: 256 x 256
+Repetitions: 3
+Threads per block: 16 x 16 = 256
+
+Median CPU time (ms): 3.161463
+Median GPU kernel time (ms): 0.112736
+Median H2D+D2H time (ms): 0.255840
+Median GPU end-to-end time (ms): 0.368576
+End-to-end speedup: 8.577506x
+Maximum absolute error: 0.00001526
+Maximum relative error: 0.00000024
+Correctness: PASS
+RESULT,256,3.161463,0.112736,0.255840,0.368576,8.577506,0.00001526,0.00000024,PASS
+
+Matrix size: 1024 x 1024
+Repetitions: 3
+Threads per block: 16 x 16 = 256
+
+Median CPU time (ms): 219.810044
+Median GPU kernel time (ms): 3.257280
+Median H2D+D2H time (ms): 2.964288
+Median GPU end-to-end time (ms): 6.218944
+End-to-end speedup: 35.345236x
+Maximum absolute error: 0.00006104
+Maximum relative error: 0.00000024
+Correctness: PASS
+RESULT,1024,219.810044,3.257280,2.964288,6.218944,35.345236,0.00006104,0.00000024,PASS
+
+Matrix size: 4096 x 4096
+Repetitions: 3
+Threads per block: 16 x 16 = 256
+
+Median CPU time (ms): 26208.768718
+Median GPU kernel time (ms): 200.267548
+Median H2D+D2H time (ms): 44.798466
+Median GPU end-to-end time (ms): 245.066013
+End-to-end speedup: 106.945750x
+Maximum absolute error: 0.00122070
+Maximum relative error: 0.00000124
+Correctness: PASS
+RESULT,4096,26208.768718,200.267548,44.798466,245.066013,106.945750,0.00122070,0.00000124,PASS
+
+
+CUDA matrix multiplication run: 2026-09-01T18:55:03.112577+00:00
+Matrix size: 256 x 256
+Repetitions: 3
+Threads per block: 16 x 16 = 256
+
+Median CPU time (ms): 3.227203
+Median GPU kernel time (ms): 0.101536
+Median H2D+D2H time (ms): 0.268960
+Median GPU end-to-end time (ms): 0.371520
+End-to-end speedup: 8.686485x
+Maximum absolute error: 0.00001526
+Maximum relative error: 0.00000024
+Correctness: PASS
+RESULT,256,3.227203,0.101536,0.268960,0.371520,8.686485,0.00001526,0.00000024,PASS
+
+Matrix size: 1024 x 1024
+Repetitions: 3
+Threads per block: 16 x 16 = 256
+
+Median CPU time (ms): 215.832808
+Median GPU kernel time (ms): 2.854016
+Median H2D+D2H time (ms): 2.873728
+Median GPU end-to-end time (ms): 5.726080
+End-to-end speedup: 37.692945x
+Maximum absolute error: 0.00006104
+Maximum relative error: 0.00000024
+Correctness: PASS
+RESULT,1024,215.832808,2.854016,2.873728,5.726080,37.692945,0.00006104,0.00000024,PASS
+
+Matrix size: 4096 x 4096
+Repetitions: 3
+Threads per block: 16 x 16 = 256
+
+Median CPU time (ms): 25796.924564
+Median GPU kernel time (ms): 196.852646
+Median H2D+D2H time (ms): 47.789314
+Median GPU end-to-end time (ms): 245.023872
+End-to-end speedup: 105.283311x
+Maximum absolute error: 0.00122070
+Maximum relative error: 0.00000124
+Correctness: PASS
+RESULT,4096,25796.924564,196.852646,47.789314,245.023872,105.283311,0.00122070,0.00000124,PASS
+
