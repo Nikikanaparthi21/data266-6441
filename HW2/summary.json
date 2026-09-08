@@ -1,0 +1,8 @@
+{
+  "sid4": 6441,
+  "seed": 6441,
+  "most_shifted_word": "review",
+  "least_shifted_word": "plot",
+  "retrieval_success_rate": 0.8,
+  "device": "cuda"
+}

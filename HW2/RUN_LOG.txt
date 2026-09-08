@@ -1,0 +1,31 @@
+[2026-09-08T10:01:02.932679+00:00] Started HW2 on device=cuda; SID4=6441; SEED=6441
+[2026-09-08T10:01:04.605302+00:00] Loaded IMDB dataset: shape=(50000, 2); path=IMDB Dataset.csv.zip
+[2026-09-08T10:06:44.372552+00:00] Loaded word2vec-google-news-300: vocab=3,000,000; dimensions=300
+[2026-09-08T10:16:48.258238+00:00] Fine-tuned Word2Vec on 10,000 reviews for 5 epochs in 221.27s; seeded=26,458; checkpoint=models/imdb_word2vec_finetuned_sid6441.model
+[2026-09-08T10:16:48.359956+00:00] Embedding shifts: most=review; least=plot
+[2026-09-08T10:16:50.063345+00:00] Saved embedding visualization: hw2_outputs/embedding_shift_score.png
+[2026-09-08T10:16:50.652547+00:00] Released Word2Vec source objects before RAG model loading
+[2026-09-08T10:17:02.547070+00:00] Loaded 10 Wikipedia movie documents
+[2026-09-08T10:17:02.591220+00:00] Created 1764 chunks using size=500, overlap=50
+[2026-09-08T10:17:31.388956+00:00] Built FAISS vector store with 1764 chunks; saved=hw2_outputs/faiss_500_50
+[2026-09-08T10:24:03.260203+00:00] Answered 5 RAG questions with top-3 retrieval
+[2026-09-08T10:24:16.664598+00:00] Retrieval Success Rate=80.0%
+[2026-09-08T10:24:28.942043+00:00] Compared 2 questions with alternate chunk_size=800, overlap=100
+[2026-09-08T10:24:37.668710+00:00] Recorded 2 concrete RAG failure examples
+[2026-09-08T10:25:18.022431+00:00] Completed all five optimization comparisons; saved=hw2_outputs/optimization_comparison.png
+Embedding most shifted=review cosine=0.6186
+Embedding least shifted=plot cosine=0.6932
+RAG retrieval success rate=80.0%
+Optimization results:
+               technique     configuration  time_sec  peak_gpu_memory_mb  final_5_step_mean_loss
+        Tensor placement cpu_then_transfer  0.305995         1181.015625                0.534649
+        Tensor placement   device_resident  0.182204         1185.909668                0.534649
+   Weight initialization           default  0.196742         1181.015625                0.534649
+   Weight initialization            xavier  0.202770         1181.015625                0.687948
+Activation checkpointing          disabled  0.191814         1181.015625                0.534649
+Activation checkpointing           enabled  0.304705         1182.015625                0.534649
+   Gradient accumulation 1 micro-batch(es)  0.209368         1182.015625                0.534649
+   Gradient accumulation 4 micro-batch(es)  0.553491         1181.921875                0.536118
+         Mixed precision              FP32  0.199287         1182.015625                0.534649
+         Mixed precision          AMP FP16  0.413737         1182.017090                0.602869
+Completed HW2 at 2026-09-08T10:25:28.868054+00:00
