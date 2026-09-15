@@ -1,0 +1,7 @@
+technique,examples,mean_latency_seconds,mean_response_characters,term_check_rate
+Zero-Shot,2,3.0685333329999906,605.5,1.0
+Few-Shot,2,3.5607504484999737,50.0,1.0
+Chain-of-Thought,2,4.0913951284999825,610.0,1.0
+Zero-Shot CoT,2,14.446084364499995,943.5,0.5
+Meta-Prompting,2,4.836015040999996,595.5,0.5
+Tree of Thoughts,2,4.889556279000004,892.5,0.5

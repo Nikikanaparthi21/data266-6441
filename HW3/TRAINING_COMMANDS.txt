@@ -1,0 +1,16 @@
+# Exact training calls used in the notebook
+
+unmasked_model, unmasked_history, unmasked_metrics = train_attention_model(
+    label="unmasked", use_causal_mask=False
+)
+
+causal_model, causal_history, causal_metrics = train_attention_model(
+    label="causal", use_causal_mask=True
+)
+
+Shared configuration:
+SEED=6441
+D_MODEL=64
+D_K=64
+EPOCHS=800
+LEARNING_RATE=0.01

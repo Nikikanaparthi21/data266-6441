@@ -1,0 +1,257 @@
+[2026-09-15T06:52:49.714419+00:00] Started HW3; SID4=6441; SEED=6441; device=cuda
+[2026-09-15T06:53:05.963666+00:00] Connected LangChain to gemini-3.6-flash; API key was not printed or saved
+[2026-09-15T06:53:18.857699+00:00] Prompt completed: technique=Zero-Shot; example=Example 1; latency=2.716s
+[2026-09-15T06:53:33.985951+00:00] Prompt completed: technique=Zero-Shot; example=Example 2; latency=3.421s
+[2026-09-15T06:53:47.094390+00:00] Prompt completed: technique=Few-Shot; example=Example 1; latency=4.092s
+[2026-09-15T06:53:53.962717+00:00] Prompt completed: technique=Few-Shot; example=Example 2; latency=3.029s
+[2026-09-15T06:54:01.172277+00:00] Prompt completed: technique=Chain-of-Thought; example=Example 1; latency=3.596s
+[2026-09-15T06:54:11.270440+00:00] Prompt completed: technique=Chain-of-Thought; example=Example 2; latency=4.586s
+[2026-09-15T06:54:19.227593+00:00] Prompt completed: technique=Zero-Shot CoT; example=Example 1; latency=4.367s
+[2026-09-15T06:54:47.241856+00:00] Prompt completed: technique=Zero-Shot CoT; example=Example 2; latency=24.525s
+[2026-09-15T06:55:05.932288+00:00] Prompt completed: technique=Meta-Prompting; example=Example 1; latency=4.517s
+[2026-09-15T06:55:21.322853+00:00] Prompt completed: technique=Meta-Prompting; example=Example 2; latency=5.155s
+[2026-09-15T06:55:29.062094+00:00] Prompt completed: technique=Tree of Thoughts; example=Example 1; latency=4.678s
+[2026-09-15T06:55:37.289036+00:00] Prompt completed: technique=Tree of Thoughts; example=Example 2; latency=5.101s
+[2026-09-15T06:55:42.612579+00:00] Completed and saved 12 prompt-engineering experiments
+[2026-09-15T06:56:13.763100+00:00] Trained unmasked model separately: final_loss=0.000094; accuracy=1.000; seconds=4.480; checkpoint=hw3_outputs/models/unmasked_attention_sid6441.pt
+[2026-09-15T06:56:26.313022+00:00] Trained causal model separately: final_loss=0.000101; accuracy=1.000; seconds=3.048; checkpoint=hw3_outputs/models/causal_attention_sid6441.pt
+[2026-09-15T06:56:43.232694+00:00] Saved learned attention heatmaps and training-loss curve
+PROMPT OUTPUT | Zero-Shot | Example 1 | Math
+To find the number of adult and child tickets sold, we can set up a system of linear equations.
+
+Let $a$ be the number of adult tickets and $c$ be the number of child tickets.
+
+1) $a + c = 120$
+2) $12a + 7c = 1165$
+
+From equation (1), we can express $c$ as $c = 120 - a$. Substitute this into equation (2):
+
+$$12a + 7(120 - a) = 1165$$
+$$12a + 840 - 7a = 1165$$
+$$5a + 840 = 1165$$
+$$5a = 325$$
+$$a = 65$$
+
+Now, find $c$:
+$$c = 120 - 65 = 55$$
+
+**Final Answer:**
+The theater sold **65 adult tickets** and **55 child tickets**.
+PROMPT OUTPUT | Zero-Shot | Example 2 | Logic
+Based on the given constraints, we can determine the schedule step-by-step:
+
+1. **Thursday:** **Cara** presents on Thursday (given).
+2. **Tuesday & Wednesday:** Dev presents immediately after Ben, forming a two-day block ([Ben, Dev]). Since Ben cannot present on Monday and Thursday is taken by Cara, the only available two-day block for Ben and Dev is Tuesday and Wednesday. Therefore, **Ben** presents on Tuesday and **Dev** presents on Wednesday.
+3. **Monday:** The only remaining person and day is **Ava** on Monday. (This also satisfies the rule that Ava presents before Cara).
+
+### Complete Schedule:
+* **Monday:** Ava
+* **Tuesday:** Ben
+* **Wednesday:** Dev
+* **Thursday:** Cara
+PROMPT OUTPUT | Few-Shot | Example 1 | Math
+65 adult tickets and 55 child tickets.
+PROMPT OUTPUT | Few-Shot | Example 2 | Logic
+Monday - Ava; Tuesday - Ben; Wednesday - Dev; Thursday - Cara.
+PROMPT OUTPUT | Chain-of-Thought | Example 1 | Math
+**Reasoning summary:** 
+Let $a + c = 120$ and $12a + 7c = 1,165$, where $a$ represents the number of adult tickets and $c$ represents the number of child tickets. 
+
+Substitute $c = 120 - a$ into the revenue equation:
+$$12a + 7(120 - a) = 1,165$$
+$$12a + 840 - 7a = 1,165$$
+$$5a + 840 = 1,165$$
+$$5a = 325$$
+$$a = 65$$
+
+Now, solve for $c$:
+$$c = 120 - 65 = 55$$
+
+**Verification:**
+* Total tickets: $65 + 55 = 120$
+* Total revenue: $12(65) + 7(55) = 780 + 385 = 1,165$
+
+**Final answer:** 65 adult tickets and 55 child tickets.
+PROMPT OUTPUT | Chain-of-Thought | Example 2 | Logic
+**Fixed constraint:** 
+Cara presents Thursday.
+
+**Eliminate impossible placements:** 
+With Cara assigned to Thursday, the remaining days to fill are Monday, Tuesday, and Wednesday for Ava, Ben, and Dev. Since Dev presents immediately after Ben, Ben and Dev must occupy consecutive days—either (Monday, Tuesday) or (Tuesday, Wednesday). Because Ben cannot present on Monday, the (Monday, Tuesday) placement is eliminated. Thus, Ben must present on Tuesday and Dev on Wednesday. This leaves Monday as the only remaining slot for Ava.
+
+**Verify every rule:**
+1. *Ava presents before Cara:* Ava is on Monday and Cara is on Thursday (Rule verified).
+2. *Ben does not present Monday:* Ben is on Tuesday
+PROMPT OUTPUT | Zero-Shot CoT | Example 1 | Math
+Here is the step-by-step solution to the problem:
+
+### **Step 1: Define Variables**
+* Let $a$ = the number of adult tickets sold.
+* Let $c$ = the number of child tickets sold.
+
+---
+
+### **Step 2: Form Equations**
+Based on the problem statement, we can set up two equations:
+
+1. **Ticket count equation:**  
+   $$a + c = 120$$
+
+2. **Revenue equation:**  
+   $$12a + 7c = 1,165$$
+
+---
+
+### **Step 3: Solve the Equations**
+We can solve this system using substitution.
+
+1. Rearrange the first equation to express $c$ in terms of
+PROMPT OUTPUT | Zero-Shot CoT | Example 2 | Logic
+To determine the complete schedule, we apply the constraints step by step:
+
+1. **Thursday:** Constraint 4 states that **Cara** presents on Thursday.
+   * *Remaining days:* Monday, Tuesday, Wednesday.
+   * *Remaining people:* Ava, Ben, Dev.
+
+2. **Tuesday & Wednesday:** Constraint 3 states that **Dev** presents immediately after **Ben**, which means Ben and Dev must occupy two consecutive days (`[Ben, Dev]`). 
+   * The available consecutive days in the remaining slot (Mon, Tue, Wed) are either (Mon, Tue) or (Tue, Wed).
+   * Constraint 2 states that **Ben** cannot present on Monday. 
+   * Therefore, the pair `[Ben, Dev]` must be placed on **Tuesday** and **Wednesday**, respectively.
+
+3. **Monday:** With Tuesday, Wednesday, and Thursday filled, the only remaining day is Monday, which must be assigned to **Ava**.
+
+---
+
+### Verification
+* **Ava presents before Cara:** Ava (Monday) is before Cara (Thursday). *(Satisfied)*
+* **Ben does not present Monday:** Ben presents on Tuesday. *(Satisfied)*
+* **Dev presents immediately after Ben:** Ben presents Tuesday, Dev presents Wednesday. *(Satisfied)*
+* **Cara presents Thursday:** Cara presents on Thursday. *(Satisfied)*
+* **One person per day:** Each of the four individuals presents once from Monday to Thursday. *(Satisfied)*
+
+---
+
+### Complete Schedule
+
+* **Monday:** Ava
+* **Tuesday:** Ben
+* **Wednesday
+PROMPT OUTPUT | Meta-Prompting | Example 1 | Math
+Here is the step-by-step solution to the problem:
+
+---
+
+### **Step 1: Define the Variables**
+* Let $A$ = the number of adult tickets sold
+* Let $C$ = the number of child tickets sold
+
+---
+
+### **Step 2: Set Up the System of Equations**
+Based on the information given:
+1. **Total tickets sold:** 
+   $$A + C = 120$$
+
+2. **Total revenue:** 
+   $$12A + 7C = 1,165$$
+
+---
+
+### **Step 3: Solve the System of Equations**
+We can use the substitution method:
+
+1. Express $C$ in terms of $A$ using the first equation:
+   $$C = 120 - A$$
+
+2. Substitute this expression for $C$ into the revenue equation:
+   $$12A + 7(120 - A) = 1,165$$
+
+3. Distribute and simplify:
+   $$12A + 840 - 7A = 1,165$$
+   $$5A + 840 = 1,165$$
+
+4. Subtract $840$ from both sides:
+   $$5A = 325$$
+
+5. Divide by $5$:
+   $$A = 65$$
+
+---
+
+### **Step 4: Find the Second Variable**
+Substitute $A = 65$ back into $C = 120 - A$:
+$$C = 120 - 65 = 55$$
+
+---
+
+### **Step 5: Verification**
+* **Check total tickets:** 
+  $$65 \text{ (adult)} + 55 \text{ (child)} = 120 \text{ tickets} \quad \checkmark$$
+
+* **Check total revenue:** 
+  $$\$12(6
+PROMPT OUTPUT | Meta-Prompting | Example 2 | Logic
+### STEP 1: CONSTRAINTS
+
+* **Entities:** Ava (A), Ben (B), Cara (C), Dev (D)
+* **Days:** Monday,
+PROMPT OUTPUT | Tree of Thoughts | Example 1 | Math
+Here is the solution structured using the compact tree-of-thought procedure.
+
+---
+
+### **Step 1: Generate Candidate Approaches**
+* **Branch 1 (Substitution):** Express $C$ in terms of $A$ using total tickets ($C = 120 - A$) and substitute into the revenue equation.
+* **Branch 2 (Elimination):** Scale the ticket count equation by $7$ to eliminate $C$ when subtracted from the revenue equation.
+* **Branch 3 (Bounded Integer Checking):** Start at the baseline bound where all tickets are child tickets and adjust for the price differential.
+
+---
+PROMPT OUTPUT | Tree of Thoughts | Example 2 | Logic
+Here is the step-by-step solution using the Tree-of-Thought procedure:
+
+### **Step 1: Create Candidate Branches for Ben–Dev Pairs**
+Since Dev presents immediately after Ben, the possible consecutive (Ben, Dev) day pairs are:
+* **Branch A:** Ben = Monday, Dev = Tuesday
+* **Branch B:** Ben = Tuesday, Dev = Wednesday
+* **Branch C:** Ben = Wednesday, Dev = Thursday
+
+---
+
+### **Step 2: Prune Branches Based on Constraints**
+* **Branch A:** **Pruned** — Violates the constraint *"Ben does not present Monday."*
+* **Branch C:** **Pruned** — Violates the constraint *"Cara presents Thursday"* (Dev would conflict with Cara on Thursday).
+* **Branch B:** **Valid** — Ben on Tuesday, Dev on Wednesday.
+
+---
+
+### **Step 3: Fill Remaining Days (Branch B)**
+1. **Cara = Thursday** (Given constraint)
+2. **Ben = Tuesday, Dev = Wednesday** (From Branch B)
+3. **Ava = Monday** (Only remaining open day)
+
+Check condition: *Ava presents before Cara* $\rightarrow$ Monday (Ava) is before Thursday (Cara). **(Satisfied)**
+
+---
+
+### **Step 4: Verification & Final Schedule**
+
+**Constraint Check:**
+* One person per day (Mon–Thu)? **Yes** (Ava, Ben, Dev, Cara)
+* Ava presents before Cara? **Yes** (Monday < Thursday)
+* Ben does not present Monday? **Yes** (Ben
+
+PROMPT SUMMARY
+       technique  examples  mean_latency_seconds  mean_response_characters  term_check_rate
+       Zero-Shot         2              3.068533                     605.5              1.0
+        Few-Shot         2              3.560750                      50.0              1.0
+Chain-of-Thought         2              4.091395                     610.0              1.0
+   Zero-Shot CoT         2             14.446084                     943.5              0.5
+  Meta-Prompting         2              4.836015                     595.5              0.5
+Tree of Thoughts         2              4.889556                     892.5              0.5
+
+ATTENTION METRICS
+   model  causal_mask  final_loss  final_next_token_accuracy  training_seconds                                       checkpoint  future_attention_mass  maximum_future_attention_weight
+unmasked        False    0.000094                        1.0          4.480171 hw3_outputs/models/unmasked_attention_sid6441.pt              17.971975                         0.999993
+  causal         True    0.000101                        1.0          3.048499   hw3_outputs/models/causal_attention_sid6441.pt               0.000000                         0.000000
+Causal future max=0.0000000000
+Completed export at 2026-09-15T06:57:04.339047+00:00

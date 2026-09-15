@@ -1,0 +1,292 @@
+technique,example,task,prompt,meta_instruction,answer,latency_seconds,response_characters,expected_answer_terms_present
+Zero-Shot,Example 1,Math,"Solve the problem and give a concise final answer.
+
+Problem: A theater sold 120 tickets. Adult tickets cost $12 and child tickets cost $7. The total revenue was $1,165. How many adult tickets and child tickets were sold?",,"To find the number of adult and child tickets sold, we can set up a system of linear equations.
+
+Let $a$ be the number of adult tickets and $c$ be the number of child tickets.
+
+1) $a + c = 120$
+2) $12a + 7c = 1165$
+
+From equation (1), we can express $c$ as $c = 120 - a$. Substitute this into equation (2):
+
+$$12a + 7(120 - a) = 1165$$
+$$12a + 840 - 7a = 1165$$
+$$5a + 840 = 1165$$
+$$5a = 325$$
+$$a = 65$$
+
+Now, find $c$:
+$$c = 120 - 65 = 55$$
+
+**Final Answer:**
+The theater sold **65 adult tickets** and **55 child tickets**.",2.7159529289999966,526,True
+Zero-Shot,Example 2,Logic,"Determine the schedule. State the person assigned to each day.
+
+Problem: Ava, Ben, Cara, and Dev each present once from Monday through Thursday, one person per day. Ava presents before Cara. Ben does not present Monday. Dev presents immediately after Ben. Cara presents Thursday. Determine the complete schedule.",,"Based on the given constraints, we can determine the schedule step-by-step:
+
+1. **Thursday:** **Cara** presents on Thursday (given).
+2. **Tuesday & Wednesday:** Dev presents immediately after Ben, forming a two-day block ([Ben, Dev]). Since Ben cannot present on Monday and Thursday is taken by Cara, the only available two-day block for Ben and Dev is Tuesday and Wednesday. Therefore, **Ben** presents on Tuesday and **Dev** presents on Wednesday.
+3. **Monday:** The only remaining person and day is **Ava** on Monday. (This also satisfies the rule that Ava presents before Cara).
+
+### Complete Schedule:
+* **Monday:** Ava
+* **Tuesday:** Ben
+* **Wednesday:** Dev
+* **Thursday:** Cara",3.4211137369999847,685,True
+Few-Shot,Example 1,Math,"Use the examples to answer the final problem in the same format.
+
+Example 1:
+Problem: A venue sold 50 tickets. Adult tickets cost $10 and child tickets cost $6.
+Revenue was $380.
+Answer: 20 adult tickets and 30 child tickets.
+
+Example 2:
+Problem: A museum sold 40 tickets. Adult tickets cost $9 and child tickets cost $5.
+Revenue was $280.
+Answer: 20 adult tickets and 20 child tickets.
+
+Final problem: A theater sold 120 tickets. Adult tickets cost $12 and child tickets cost $7. The total revenue was $1,165. How many adult tickets and child tickets were sold?
+Answer:",,65 adult tickets and 55 child tickets.,4.092121961999993,38,True
+Few-Shot,Example 2,Logic,"Use the solved examples to produce only a complete day-by-day schedule.
+
+Example 1:
+Kai, Lia, and Moe present Monday-Wednesday. Lia is Wednesday. Moe is after Kai.
+Answer: Monday - Kai; Tuesday - Moe; Wednesday - Lia.
+
+Example 2:
+Noah, Omar, and Pia present Monday-Wednesday. Noah is before Pia. Omar is Monday.
+Answer: Monday - Omar; Tuesday - Noah; Wednesday - Pia.
+
+Final problem: Ava, Ben, Cara, and Dev each present once from Monday through Thursday, one person per day. Ava presents before Cara. Ben does not present Monday. Dev presents immediately after Ben. Cara presents Thursday. Determine the complete schedule.
+Answer:",,Monday - Ava; Tuesday - Ben; Wednesday - Dev; Thursday - Cara.,3.0293789349999543,62,True
+Chain-of-Thought,Example 1,Math,"Solve the target problem using the demonstrated reasoning format.
+
+Demonstration:
+Problem: A venue sold 50 tickets. Adults cost $10, children cost $6, and revenue was $380.
+Reasoning summary: Let a+c=50 and 10a+6c=380. Substitute c=50-a, giving
+10a+300-6a=380, so a=20 and c=30. Verify: 20+30=50 and 200+180=380.
+Final answer: 20 adults and 30 children.
+
+Target problem: A theater sold 120 tickets. Adult tickets cost $12 and child tickets cost $7. The total revenue was $1,165. How many adult tickets and child tickets were sold?
+Show the equations, solve them, verify both totals, and end with one clearly labeled final answer.",,"**Reasoning summary:** 
+Let $a + c = 120$ and $12a + 7c = 1,165$, where $a$ represents the number of adult tickets and $c$ represents the number of child tickets. 
+
+Substitute $c = 120 - a$ into the revenue equation:
+$$12a + 7(120 - a) = 1,165$$
+$$12a + 840 - 7a = 1,165$$
+$$5a + 840 = 1,165$$
+$$5a = 325$$
+$$a = 65$$
+
+Now, solve for $c$:
+$$c = 120 - 65 = 55$$
+
+**Verification:**
+* Total tickets: $65 + 55 = 120$
+* Total revenue: $12(65) + 7(55) = 780 + 385 = 1,165$
+
+**Final answer:** 65 adult tickets and 55 child tickets.",3.596496865000006,524,True
+Chain-of-Thought,Example 2,Logic,"Solve the target using the demonstrated constraint-checking format.
+
+Demonstration:
+Problem: Kai, Lia, and Moe present Monday-Wednesday. Lia is Wednesday and Moe is after Kai.
+Reasoning summary: Wednesday is fixed for Lia. Kai must precede Moe, so Kai is Monday and Moe is Tuesday.
+Final answer: Monday - Kai; Tuesday - Moe; Wednesday - Lia.
+
+Target problem: Ava, Ben, Cara, and Dev each present once from Monday through Thursday, one person per day. Ava presents before Cara. Ben does not present Monday. Dev presents immediately after Ben. Cara presents Thursday. Determine the complete schedule.
+List the fixed constraint, eliminate impossible placements, verify every rule, and end with the schedule.",,"**Fixed constraint:** 
+Cara presents Thursday.
+
+**Eliminate impossible placements:** 
+With Cara assigned to Thursday, the remaining days to fill are Monday, Tuesday, and Wednesday for Ava, Ben, and Dev. Since Dev presents immediately after Ben, Ben and Dev must occupy consecutive days—either (Monday, Tuesday) or (Tuesday, Wednesday). Because Ben cannot present on Monday, the (Monday, Tuesday) placement is eliminated. Thus, Ben must present on Tuesday and Dev on Wednesday. This leaves Monday as the only remaining slot for Ava.
+
+**Verify every rule:**
+1. *Ava presents before Cara:* Ava is on Monday and Cara is on Thursday (Rule verified).
+2. *Ben does not present Monday:* Ben is on Tuesday",4.586293391999959,696,True
+Zero-Shot CoT,Example 1,Math,"A theater sold 120 tickets. Adult tickets cost $12 and child tickets cost $7. The total revenue was $1,165. How many adult tickets and child tickets were sold?
+
+Think step by step. Define variables, form equations, solve them, verify the ticket count and
+revenue, and finish with a concise final answer.",,"Here is the step-by-step solution to the problem:
+
+### **Step 1: Define Variables**
+* Let $a$ = the number of adult tickets sold.
+* Let $c$ = the number of child tickets sold.
+
+---
+
+### **Step 2: Form Equations**
+Based on the problem statement, we can set up two equations:
+
+1. **Ticket count equation:**  
+   $$a + c = 120$$
+
+2. **Revenue equation:**  
+   $$12a + 7c = 1,165$$
+
+---
+
+### **Step 3: Solve the Equations**
+We can solve this system using substitution.
+
+1. Rearrange the first equation to express $c$ in terms of",4.367195590999984,524,False
+Zero-Shot CoT,Example 2,Logic,"Ava, Ben, Cara, and Dev each present once from Monday through Thursday, one person per day. Ava presents before Cara. Ben does not present Monday. Dev presents immediately after Ben. Cara presents Thursday. Determine the complete schedule.
+
+Think step by step. Apply each constraint, reject inconsistent placements, verify the final
+schedule against every rule, and finish with a concise day-by-day answer.",,"To determine the complete schedule, we apply the constraints step by step:
+
+1. **Thursday:** Constraint 4 states that **Cara** presents on Thursday.
+   * *Remaining days:* Monday, Tuesday, Wednesday.
+   * *Remaining people:* Ava, Ben, Dev.
+
+2. **Tuesday & Wednesday:** Constraint 3 states that **Dev** presents immediately after **Ben**, which means Ben and Dev must occupy two consecutive days (`[Ben, Dev]`). 
+   * The available consecutive days in the remaining slot (Mon, Tue, Wed) are either (Mon, Tue) or (Tue, Wed).
+   * Constraint 2 states that **Ben** cannot present on Monday. 
+   * Therefore, the pair `[Ben, Dev]` must be placed on **Tuesday** and **Wednesday**, respectively.
+
+3. **Monday:** With Tuesday, Wednesday, and Thursday filled, the only remaining day is Monday, which must be assigned to **Ava**.
+
+---
+
+### Verification
+* **Ava presents before Cara:** Ava (Monday) is before Cara (Thursday). *(Satisfied)*
+* **Ben does not present Monday:** Ben presents on Tuesday. *(Satisfied)*
+* **Dev presents immediately after Ben:** Ben presents Tuesday, Dev presents Wednesday. *(Satisfied)*
+* **Cara presents Thursday:** Cara presents on Thursday. *(Satisfied)*
+* **One person per day:** Each of the four individuals presents once from Monday to Thursday. *(Satisfied)*
+
+---
+
+### Complete Schedule
+
+* **Monday:** Ava
+* **Tuesday:** Ben
+* **Wednesday",24.524973138000007,1363,True
+Meta-Prompting,Example 1,Math,"Verification?* Yes (Step 5).
+    *   *Clearly labeled final answer?* Yes (Step 6).
+    *   *
+
+Problem to solve: A theater sold 120 tickets. Adult tickets cost $12 and child tickets cost $7. The total revenue was $1,165. How many adult tickets and child tickets were sold?","Verification?* Yes (Step 5).
+    *   *Clearly labeled final answer?* Yes (Step 6).
+    *   *","Here is the step-by-step solution to the problem:
+
+---
+
+### **Step 1: Define the Variables**
+* Let $A$ = the number of adult tickets sold
+* Let $C$ = the number of child tickets sold
+
+---
+
+### **Step 2: Set Up the System of Equations**
+Based on the information given:
+1. **Total tickets sold:** 
+   $$A + C = 120$$
+
+2. **Total revenue:** 
+   $$12A + 7C = 1,165$$
+
+---
+
+### **Step 3: Solve the System of Equations**
+We can use the substitution method:
+
+1. Express $C$ in terms of $A$ using the first equation:
+   $$C = 120 - A$$
+
+2. Substitute this expression for $C$ into the revenue equation:
+   $$12A + 7(120 - A) = 1,165$$
+
+3. Distribute and simplify:
+   $$12A + 840 - 7A = 1,165$$
+   $$5A + 840 = 1,165$$
+
+4. Subtract $840$ from both sides:
+   $$5A = 325$$
+
+5. Divide by $5$:
+   $$A = 65$$
+
+---
+
+### **Step 4: Find the Second Variable**
+Substitute $A = 65$ back into $C = 120 - A$:
+$$C = 120 - 65 = 55$$
+
+---
+
+### **Step 5: Verification**
+* **Check total tickets:** 
+  $$65 \text{ (adult)} + 55 \text{ (child)} = 120 \text{ tickets} \quad \checkmark$$
+
+* **Check total revenue:** 
+  $$\$12(6",4.517324525999982,1095,True
+Meta-Prompting,Example 2,Logic,"You are an expert logic solver specializing in daily scheduling puzzles. When presented with a scheduling puzzle, solve it using the following strict four-step process:
+
+### STEP 1: CONSTRAINT
+
+Problem to solve: Ava, Ben, Cara, and Dev each present once from Monday through Thursday, one person per day. Ava presents before Cara. Ben does not present Monday. Dev presents immediately after Ben. Cara presents Thursday. Determine the complete schedule.","You are an expert logic solver specializing in daily scheduling puzzles. When presented with a scheduling puzzle, solve it using the following strict four-step process:
+
+### STEP 1: CONSTRAINT","### STEP 1: CONSTRAINTS
+
+* **Entities:** Ava (A), Ben (B), Cara (C), Dev (D)
+* **Days:** Monday,",5.15470555600001,96,False
+Tree of Thoughts,Example 1,Math,"Solve this problem using a compact tree-of-thought procedure.
+
+Problem: A theater sold 120 tickets. Adult tickets cost $12 and child tickets cost $7. The total revenue was $1,165. How many adult tickets and child tickets were sold?
+
+1. Generate three candidate approaches: algebraic substitution, algebraic elimination, and
+   bounded integer checking.
+2. Work each approach far enough to detect an error or obtain a candidate.
+3. Compare the candidates against both original totals.
+4. Select the valid branch and give one final answer.
+
+Keep the branch summaries concise but show the verification.",,"Here is the solution structured using the compact tree-of-thought procedure.
+
+---
+
+### **Step 1: Generate Candidate Approaches**
+* **Branch 1 (Substitution):** Express $C$ in terms of $A$ using total tickets ($C = 120 - A$) and substitute into the revenue equation.
+* **Branch 2 (Elimination):** Scale the ticket count equation by $7$ to eliminate $C$ when subtracted from the revenue equation.
+* **Branch 3 (Bounded Integer Checking):** Start at the baseline bound where all tickets are child tickets and adjust for the price differential.
+
+---",4.678064721999988,545,False
+Tree of Thoughts,Example 2,Logic,"Solve this scheduling problem using a compact tree-of-thought procedure.
+
+Problem: Ava, Ben, Cara, and Dev each present once from Monday through Thursday, one person per day. Ava presents before Cara. Ben does not present Monday. Dev presents immediately after Ben. Cara presents Thursday. Determine the complete schedule.
+
+1. Create candidate branches for the possible consecutive Ben-Dev day pairs.
+2. Prune every branch that violates a stated constraint.
+3. Fill the remaining days with Ava and Cara.
+4. Verify all constraints and give one final day-by-day schedule.",,"Here is the step-by-step solution using the Tree-of-Thought procedure:
+
+### **Step 1: Create Candidate Branches for Ben–Dev Pairs**
+Since Dev presents immediately after Ben, the possible consecutive (Ben, Dev) day pairs are:
+* **Branch A:** Ben = Monday, Dev = Tuesday
+* **Branch B:** Ben = Tuesday, Dev = Wednesday
+* **Branch C:** Ben = Wednesday, Dev = Thursday
+
+---
+
+### **Step 2: Prune Branches Based on Constraints**
+* **Branch A:** **Pruned** — Violates the constraint *""Ben does not present Monday.""*
+* **Branch C:** **Pruned** — Violates the constraint *""Cara presents Thursday""* (Dev would conflict with Cara on Thursday).
+* **Branch B:** **Valid** — Ben on Tuesday, Dev on Wednesday.
+
+---
+
+### **Step 3: Fill Remaining Days (Branch B)**
+1. **Cara = Thursday** (Given constraint)
+2. **Ben = Tuesday, Dev = Wednesday** (From Branch B)
+3. **Ava = Monday** (Only remaining open day)
+
+Check condition: *Ava presents before Cara* $\rightarrow$ Monday (Ava) is before Thursday (Cara). **(Satisfied)**
+
+---
+
+### **Step 4: Verification & Final Schedule**
+
+**Constraint Check:**
+* One person per day (Mon–Thu)? **Yes** (Ava, Ben, Dev, Cara)
+* Ava presents before Cara? **Yes** (Monday < Thursday)
+* Ben does not present Monday? **Yes** (Ben",5.101047836000021,1240,True
