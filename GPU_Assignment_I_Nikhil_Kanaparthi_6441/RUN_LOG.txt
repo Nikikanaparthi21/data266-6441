@@ -1,0 +1,70 @@
+GPU Assignment I - UUID-traceable run log
+Student: Nikhil Kanaparthi
+SID4: 6441
+GPU: Tesla T4
+UUID: GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d
+Driver: 580.82.07
+CUDA runtime: 12.8
+
+PART B - MATMUL
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d N=1024 precision=FP32 repetitions=20 seconds_per_run=0.000630640 achieved_TFLOPS=3.405245 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d N=1024 precision=TF32 repetitions=20 seconds_per_run=0.000638070 achieved_TFLOPS=3.365590 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d N=1024 precision=FP16 repetitions=20 seconds_per_run=0.000115218 achieved_TFLOPS=18.638503 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d N=1024 precision=BF16 repetitions=20 seconds_per_run=0.001175955 achieved_TFLOPS=1.826161 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d N=4096 precision=FP32 repetitions=10 seconds_per_run=0.035861917 achieved_TFLOPS=3.832449 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d N=4096 precision=TF32 repetitions=10 seconds_per_run=0.032886197 achieved_TFLOPS=4.179229 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d N=4096 precision=FP16 repetitions=10 seconds_per_run=0.005376755 achieved_TFLOPS=25.561691 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d N=4096 precision=BF16 repetitions=10 seconds_per_run=0.059295410 achieved_TFLOPS=2.317868 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d N=8192 precision=FP32 repetitions=3 seconds_per_run=0.275957072 achieved_TFLOPS=3.984357 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d N=8192 precision=TF32 repetitions=3 seconds_per_run=0.277215922 achieved_TFLOPS=3.966264 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d N=8192 precision=FP16 repetitions=3 seconds_per_run=0.047336578 achieved_TFLOPS=23.227526 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d N=8192 precision=BF16 repetitions=3 seconds_per_run=0.486337402 achieved_TFLOPS=2.260800 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d N=16384 precision=FP32 repetitions=1 seconds_per_run=1.837420532 achieved_TFLOPS=4.787196 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d N=16384 precision=TF32 repetitions=1 seconds_per_run=1.850558228 achieved_TFLOPS=4.753211 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d N=16384 precision=FP16 repetitions=1 seconds_per_run=0.518875122 achieved_TFLOPS=16.952235 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d N=16384 precision=BF16 repetitions=1 seconds_per_run=4.144551758 achieved_TFLOPS=2.122327 status=success
+
+PART C - BANDWIDTH
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d operation=elementwise_add effective_GBps=246.279387 specified_GBps=320 percent=76.962308 arithmetic_intensity=0.083333333
+
+PART D - ATTENTION
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d implementation=naive L=512 latency_ms=0.161328 peak_memory_mib=10.375000 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d implementation=naive L=1024 latency_ms=0.155648 peak_memory_mib=16.625000 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d implementation=naive L=2048 latency_ms=0.402432 peak_memory_mib=41.125000 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d implementation=naive L=4096 latency_ms=1.732608 peak_memory_mib=138.125000 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d implementation=naive L=8192 latency_ms=6.017040 peak_memory_mib=524.125000 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d implementation=naive L=16384 latency_ms=20.143105 peak_memory_mib=2064.125000 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d implementation=fused L=512 latency_ms=0.075776 peak_memory_mib=8.437500 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d implementation=fused L=1024 latency_ms=0.130080 peak_memory_mib=8.750000 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d implementation=fused L=2048 latency_ms=0.285472 peak_memory_mib=9.375000 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d implementation=fused L=4096 latency_ms=0.657408 peak_memory_mib=10.625000 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d implementation=fused L=8192 latency_ms=2.397264 peak_memory_mib=13.125000 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d implementation=fused L=16384 latency_ms=7.655344 peak_memory_mib=18.125000 status=success
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d naive_largest_success=16384 naive_smallest_failure=not_observed
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d fused_largest_success=16384 fused_smallest_failure=not_observed
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d naive_memory_quadratic_coefficient_mib_per_token2=0.000007629395
+
+PART E - THERMAL
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d samples=238 duration_seconds=1195.456569 median_interval_seconds=5.043319
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d first30_peak_TFLOPS=20.306874 final5_mean_TFLOPS=20.056244 steady_over_peak_percent=98.765785
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d max_temperature_C=50.000 sm_clock_min_MHz=585.000 sm_clock_max_MHz=585.000 max_power_W=44.110 max_sampled_utilization_percent=6.000
+UUID=GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d throttle_onset=none_observed limitation=intermittent_not_sustained
+
+FILE HASHES
+SHA256 AI_USE.md 7a408f8b5214fa3dda9861c9068eabfce0295d8191584803df5eccb4db1ebfdd
+SHA256 ANALYSIS.md f686bec2a96c71868e677e7d0b72db051482eefd43af52c807d66698bfded472
+SHA256 GPU_Assignment_I_Colab_Nikhil_Kanaparthi.ipynb ad5db01b0104d934e6e35c92d8de328e0bb17f348f36b2428633c2edcfbce711
+SHA256 GPU_HOURS.md 83f20887c2963f190cf7d1cbc84211814866b35de81d04727e2b0e7e300cd5d2
+SHA256 EXPERIMENT_NOTES.md eb980f43c8c69652b39182144d9c9f9c327715e243dd71b2387f4dfc30b58503
+SHA256 METRICS.md 223042197e861615ddf5ef6b9f11f37cc9134495fbec8fd6345dbbf5fd37b4c8
+SHA256 README.md bec9ae66b3f7f425f739904b3521d79e616da50fe9ccbe077a1e50bf3b76a704
+SHA256 VENDOR_SPECS.md 2516be41c8ff290ed5e552cb2c7a9ad546a4211d46c6d94f895a2c2234e3f14f
+SHA256 attention_metrics.csv d60fa83b1b82542762ebbfe8fe239f18cbfacdf383423eaede3c5057e1e550cc
+SHA256 attention_summary.json fdea2a9c2792183ede1f26be4ed21e7f8f4753b08909f272bab4cd9e4c01e854
+SHA256 bandwidth_metrics.json 2977f9259e2a49739d37183b4c22f0f1c59200b09356426e95d8a905011e1852
+SHA256 gpu_info.json d7471af9279ca063f22651dd580b8f96ea7932a39cafda65c697d7667aaeb6bd
+SHA256 matmul_metrics.csv 2bef75cdfcadf51c47b751d01606b9ac8fdc1e5146386c3ed2aab609e051b33b
+SHA256 nvidia-smi-q.txt d026cbf1277edbd3e517b711a5a4edc021e517996cb8c0d361c9a300b8bfcff0
+SHA256 thermal_log.csv f1514151e20ee3835314097646fe750065505f905d8acbd73501ef176b00567e
+SHA256 thermal_log_cleaned.csv 4e11c7cc54a4240b8c053ff12fa0868c1ad66a1a91d659bf1bc4d2cfd3120cb8
+SHA256 thermal_summary.json 4fb27403ce8665b06f7428824f8e69fc0fe687fed2228aa877c7fe2dfca4c994
