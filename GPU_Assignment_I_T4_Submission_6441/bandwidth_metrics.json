@@ -1,8 +1,0 @@
-{
-  "uuid": "GPU-a98bf6a6-5b25-331d-3b55-5cc9697e4e0d",
-  "gpu": "Tesla T4",
-  "effective_bandwidth_gbs": 246.27938659576458,
-  "specified_bandwidth_gbs": 320,
-  "percent": 76.96230831117643,
-  "arithmetic_intensity": 0.08333333333333333
-}
