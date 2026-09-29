@@ -8,6 +8,8 @@ I executed the notebook one section at a time, reviewed the code and outputs, an
 
 ## Error encountered and resolution
 
+During final verification, I found that the initial mixed-precision run produced zero training loss, NaN validation loss, and NaN gradient norms. I used AI assistance to identify fp16 numerical instability as the likely cause. I changed fp16=True to fp16=False and reran the complete experiment. The corrected run produced finite training and validation losses and updated model outputs.
+
 During the LoRA rank-4 experiment, PEFT produced the following error:
 
 ```text
