@@ -1,0 +1,47 @@
+[2026-09-29T18:35:03.623518+00:00] Student=Nikhil Kanaparthi SID4=6441 SEED=6441 SLICE=441 HP_ID=3 CLS_A=1 CLS_B=7
+[2026-09-29T18:35:03.623829+00:00] Python=3.13.15 PyTorch=2.11.0+cu128 Transformers=4.57.6 PEFT=0.21.1 Datasets=4.8.5
+[2026-09-29T18:35:03.623970+00:00] GPU=Tesla T4 GPU_memory_GiB=14.56
+[2026-09-29T18:35:03.624067+00:00] Base_model=google/flan-t5-small Dataset=neil-code/dialogsum-test
+[2026-09-29T18:35:04.963090+00:00] Dataset splits: train=1999, validation=499, test=499
+[2026-09-29T18:35:05.046519+00:00] Subsets train=800 validation=100 quality_eval=50 comparison_indices=[0,1]
+[2026-09-29T18:35:15.365576+00:00] Baseline sample_predictions=["#Person2#: Thank you, sir.", "#Person2#: Thank you, sir."]
+[2026-09-29T18:35:15.365742+00:00] Baseline quality_metrics={"rouge1": 0.1559906842079938, "rouge2": 0.02989354052316503, "rougeL": 0.1366900296700627}
+[2026-09-29T18:35:33.114980+00:00] START LoRA rank=4
+[2026-09-29T18:36:53.183736+00:00] END LoRA rank=4 total_params=77133184 trainable_params=172032 trainable_percent=0.223032 final_training_loss=0.000000 validation_loss=nan quality_metrics={"rouge1": 0.1559906842079938, "rouge2": 0.02989354052316503, "rougeL": 0.1366900296700627}
+[2026-09-29T18:36:53.183775+00:00] LoRA rank=4 sample_predictions=["#Person2#: Thank you, sir.", "#Person2#: Thank you, sir."]
+[2026-09-29T18:36:53.183797+00:00] LoRA rank=4 adapter_path=/content/HW5_Nikhil_Kanaparthi_6441/adapters/flan_t5_small_dialogsum_lora_r4
+[2026-09-29T18:39:13.550004+00:00] START LoRA rank=16
+[2026-09-29T18:40:09.804749+00:00] END LoRA rank=16 total_params=77649280 trainable_params=688128 trainable_percent=0.886200 final_training_loss=0.000000 validation_loss=nan quality_metrics={"rouge1": 0.1559906842079938, "rouge2": 0.02989354052316503, "rougeL": 0.1366900296700627}
+[2026-09-29T18:40:09.804779+00:00] LoRA rank=16 sample_predictions=["#Person2#: Thank you, sir.", "#Person2#: Thank you, sir."]
+[2026-09-29T18:40:09.804794+00:00] LoRA rank=16 adapter_path=/content/HW5_Nikhil_Kanaparthi_6441/adapters/flan_t5_small_dialogsum_lora_r16
+[2026-09-29T18:43:36.106306+00:00] Interpretation: After fine-tuning, the best LoRA configuration was r=4, with ROUGE-L=0.1367 versus the baseline's ROUGE-L=0.1367 on the same 50 held-out dialogues.
+[2026-09-29T18:43:36.106333+00:00] Interpretation: The r=4 and r=16 adapters achieved ROUGE-L values of 0.1367 and 0.1367; the higher rank used 688,128 trainable parameters compared with 172,032.
+[2026-09-29T18:43:36.106348+00:00] Interpretation: The displayed examples show that fine-tuning changes the output from general instruction-model responses toward concise dialogue summaries; the metric difference indicates whether the extra capacity at rank 16 produced a meaningful quality gain in this run.
+TRAINER LOG HISTORY
+{"epoch": 0.02, "grad_norm": NaN, "learning_rate": 0.0002, "loss": 0.0, "rank": 4, "step": 1}
+{"epoch": 0.2, "grad_norm": NaN, "learning_rate": 0.000182, "loss": 0.0, "rank": 4, "step": 10}
+{"epoch": 0.4, "grad_norm": NaN, "learning_rate": 0.000162, "loss": 0.0, "rank": 4, "step": 20}
+{"epoch": 0.6, "grad_norm": NaN, "learning_rate": 0.000142, "loss": 0.0, "rank": 4, "step": 30}
+{"epoch": 0.8, "grad_norm": NaN, "learning_rate": 0.000122, "loss": 0.0, "rank": 4, "step": 40}
+{"epoch": 1.0, "grad_norm": NaN, "learning_rate": 0.00010200000000000001, "loss": 0.0, "rank": 4, "step": 50}
+{"epoch": 1.2, "grad_norm": NaN, "learning_rate": 8.2e-05, "loss": 0.0, "rank": 4, "step": 60}
+{"epoch": 1.4, "grad_norm": NaN, "learning_rate": 6.2e-05, "loss": 0.0, "rank": 4, "step": 70}
+{"epoch": 1.6, "grad_norm": NaN, "learning_rate": 4.2e-05, "loss": 0.0, "rank": 4, "step": 80}
+{"epoch": 1.8, "grad_norm": NaN, "learning_rate": 2.2000000000000003e-05, "loss": 0.0, "rank": 4, "step": 90}
+{"epoch": 2.0, "grad_norm": NaN, "learning_rate": 2.0000000000000003e-06, "loss": 0.0, "rank": 4, "step": 100}
+{"epoch": 2.0, "rank": 4, "step": 100, "total_flos": 203773429579776.0, "train_loss": 0.0, "train_runtime": 66.8786, "train_samples_per_second": 23.924, "train_steps_per_second": 1.495}
+{"epoch": 2.0, "eval_loss": NaN, "eval_runtime": 2.3289, "eval_samples_per_second": 42.938, "eval_steps_per_second": 5.582, "rank": 4, "step": 100}
+{"epoch": 0.02, "grad_norm": NaN, "learning_rate": 0.0002, "loss": 0.0, "rank": 16, "step": 1}
+{"epoch": 0.2, "grad_norm": NaN, "learning_rate": 0.000182, "loss": 0.0, "rank": 16, "step": 10}
+{"epoch": 0.4, "grad_norm": NaN, "learning_rate": 0.000162, "loss": 0.0, "rank": 16, "step": 20}
+{"epoch": 0.6, "grad_norm": NaN, "learning_rate": 0.000142, "loss": 0.0, "rank": 16, "step": 30}
+{"epoch": 0.8, "grad_norm": NaN, "learning_rate": 0.000122, "loss": 0.0, "rank": 16, "step": 40}
+{"epoch": 1.0, "grad_norm": NaN, "learning_rate": 0.00010200000000000001, "loss": 0.0, "rank": 16, "step": 50}
+{"epoch": 1.2, "grad_norm": NaN, "learning_rate": 8.2e-05, "loss": 0.0, "rank": 16, "step": 60}
+{"epoch": 1.4, "grad_norm": NaN, "learning_rate": 6.2e-05, "loss": 0.0, "rank": 16, "step": 70}
+{"epoch": 1.6, "grad_norm": NaN, "learning_rate": 4.2e-05, "loss": 0.0, "rank": 16, "step": 80}
+{"epoch": 1.8, "grad_norm": NaN, "learning_rate": 2.2000000000000003e-05, "loss": 0.0, "rank": 16, "step": 90}
+{"epoch": 2.0, "grad_norm": NaN, "learning_rate": 2.0000000000000003e-06, "loss": 0.0, "rank": 16, "step": 100}
+{"epoch": 2.0, "rank": 16, "step": 100, "total_flos": 205506471690240.0, "train_loss": 0.0, "train_runtime": 49.4324, "train_samples_per_second": 32.367, "train_steps_per_second": 2.023}
+{"epoch": 2.0, "eval_loss": NaN, "eval_runtime": 0.6836, "eval_samples_per_second": 146.277, "eval_steps_per_second": 19.016, "rank": 16, "step": 100}
+[2026-09-29T18:50:56.049610+00:00] Saved submission artifacts to /content/HW5_Nikhil_Kanaparthi_6441

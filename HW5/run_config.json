@@ -1,0 +1,31 @@
+{
+  "student": "Nikhil Kanaparthi",
+  "SID4": 6441,
+  "SEED": 6441,
+  "SLICE": 441,
+  "HP_ID": 3,
+  "CLS_A": 1,
+  "CLS_B": 7,
+  "base_model": "google/flan-t5-small",
+  "dataset": "neil-code/dialogsum-test",
+  "ranks": [
+    4,
+    16
+  ],
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": [
+    "q",
+    "v"
+  ],
+  "train_size": 800,
+  "validation_size": 100,
+  "quality_eval_size": 50,
+  "max_source_length": 384,
+  "max_target_length": 96,
+  "num_train_epochs": 2,
+  "train_batch_size": 8,
+  "gradient_accumulation_steps": 2,
+  "learning_rate": 0.0002,
+  "gpu": "Tesla T4"
+}
