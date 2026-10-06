@@ -1,0 +1,29 @@
+{
+  "student": "Nikhil Kanaparthi",
+  "SID4": 6441,
+  "SEED": 6441,
+  "SLICE": 441,
+  "HP_ID": 3,
+  "CLS_A": 1,
+  "CLS_B": 7,
+  "dataset": "STL-10",
+  "backbone": "ResNet-18, weights=None",
+  "image_size": 96,
+  "labeled_subset_size": 500,
+  "labeled_sampling": "balanced, 50 images per class",
+  "rotation_unlabeled_size": 100000,
+  "simclr_unlabeled_size": 20000,
+  "simclr_temperature": 0.2,
+  "epochs": {
+    "supervised": 15,
+    "rotation_ssl": 15,
+    "rotation_linear": 20,
+    "simclr": 15,
+    "simclr_linear": 20
+  },
+  "query_indices": [
+    2698,
+    6367,
+    1836
+  ]
+}
