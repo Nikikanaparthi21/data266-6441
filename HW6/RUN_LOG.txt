@@ -1,0 +1,100 @@
+[2026-10-06T14:16:59.563603+00:00] Student=Nikhil Kanaparthi SID4=6441 SEED=6441 SLICE=441 HP_ID=3
+[2026-10-06T14:16:59.563833+00:00] Python=3.13.15 PyTorch=2.11.0+cu130 Torchvision=0.26.0+cu130
+[2026-10-06T14:16:59.563911+00:00] GPU=Tesla T4 GPU_memory_GiB=14.56
+[2026-10-06T14:16:59.578569+00:00] Configuration image_size=96 labeled_subset=500 simclr_subset=20000 tau=0.2 epochs=(15,15,20,15,20)
+[2026-10-06T14:21:32.434722+00:00] STL10 train=5000 unlabeled=100000 test=8000 balanced_labeled_subset=500
+[2026-10-06T14:21:39.378612+00:00] {"accuracy": 0.132, "epoch": 1, "learning_rate": 0.049453690018345146, "loss": 2.799120662689209, "seconds": 4.1063549518585205, "stage": "Part A supervised"}
+[2026-10-06T14:21:40.385062+00:00] {"accuracy": 0.214, "epoch": 2, "learning_rate": 0.04783863644106502, "loss": 3.6216042327880857, "seconds": 0.7211718559265137, "stage": "Part A supervised"}
+[2026-10-06T14:21:41.797270+00:00] {"accuracy": 0.198, "epoch": 3, "learning_rate": 0.04522542485937369, "loss": 2.943676244735718, "seconds": 0.8386850357055664, "stage": "Part A supervised"}
+[2026-10-06T14:21:43.586477+00:00] {"accuracy": 0.248, "epoch": 4, "learning_rate": 0.04172826515897146, "loss": 2.3124430770874023, "seconds": 1.1407349109649658, "stage": "Part A supervised"}
+[2026-10-06T14:21:45.380787+00:00] {"accuracy": 0.282, "epoch": 5, "learning_rate": 0.037500000000000006, "loss": 2.1000284786224364, "seconds": 1.1225841045379639, "stage": "Part A supervised"}
+[2026-10-06T14:21:46.716871+00:00] {"accuracy": 0.274, "epoch": 6, "learning_rate": 0.03272542485937369, "loss": 1.9764681758880616, "seconds": 0.727290153503418, "stage": "Part A supervised"}
+[2026-10-06T14:21:47.970620+00:00] {"accuracy": 0.302, "epoch": 7, "learning_rate": 0.027613211581691346, "loss": 1.905548689842224, "seconds": 0.6989407539367676, "stage": "Part A supervised"}
+[2026-10-06T14:21:49.229418+00:00] {"accuracy": 0.358, "epoch": 8, "learning_rate": 0.022386788418308674, "loss": 1.797370325088501, "seconds": 0.7369050979614258, "stage": "Part A supervised"}
+[2026-10-06T14:21:50.659481+00:00] {"accuracy": 0.36, "epoch": 9, "learning_rate": 0.017274575140626323, "loss": 1.722590437889099, "seconds": 0.7193741798400879, "stage": "Part A supervised"}
+[2026-10-06T14:21:51.652827+00:00] {"accuracy": 0.37, "epoch": 10, "learning_rate": 0.01250000000000001, "loss": 1.5467031507492066, "seconds": 0.6845765113830566, "stage": "Part A supervised"}
+[2026-10-06T14:21:52.965403+00:00] {"accuracy": 0.43, "epoch": 11, "learning_rate": 0.008271734841028555, "loss": 1.478776867866516, "seconds": 0.7213690280914307, "stage": "Part A supervised"}
+[2026-10-06T14:21:53.942720+00:00] {"accuracy": 0.476, "epoch": 12, "learning_rate": 0.0047745751406263175, "loss": 1.357455759048462, "seconds": 0.6886909008026123, "stage": "Part A supervised"}
+[2026-10-06T14:21:55.190421+00:00] {"accuracy": 0.5, "epoch": 13, "learning_rate": 0.0021613635589349763, "loss": 1.2966826829910278, "seconds": 0.6878972053527832, "stage": "Part A supervised"}
+[2026-10-06T14:21:56.506690+00:00] {"accuracy": 0.494, "epoch": 14, "learning_rate": 0.000546309981654858, "loss": 1.290754638671875, "seconds": 0.8264756202697754, "stage": "Part A supervised"}
+[2026-10-06T14:21:58.369197+00:00] {"accuracy": 0.518, "epoch": 15, "learning_rate": 0.0, "loss": 1.2674349632263184, "seconds": 1.22294020652771, "stage": "Part A supervised"}
+[2026-10-06T14:22:05.361752+00:00] Part A test_metrics={"accuracy": 0.362, "loss": 1.7073771896362304}
+[2026-10-06T14:23:50.265912+00:00] {"accuracy": 0.46207, "epoch": 1, "learning_rate": 0.0002967221401100708, "loss": 1.1236862723541259, "seconds": 103.9028902053833, "stage": "Part B rotation SSL"}
+[2026-10-06T14:25:28.782214+00:00] {"accuracy": 0.53307, "epoch": 2, "learning_rate": 0.0002870318186463901, "loss": 0.9683362883758545, "seconds": 98.07349491119385, "stage": "Part B rotation SSL"}
+[2026-10-06T14:27:10.363792+00:00] {"accuracy": 0.55691, "epoch": 3, "learning_rate": 0.0002713525491562421, "loss": 0.9062976483154297, "seconds": 101.11113977432251, "stage": "Part B rotation SSL"}
+[2026-10-06T14:28:49.449808+00:00] {"accuracy": 0.57416, "epoch": 4, "learning_rate": 0.00025036959095382875, "loss": 0.8657654627609253, "seconds": 98.24337339401245, "stage": "Part B rotation SSL"}
+[2026-10-06T14:30:30.001528+00:00] {"accuracy": 0.58468, "epoch": 5, "learning_rate": 0.00022500000000000002, "loss": 0.8355885494613647, "seconds": 100.08890008926392, "stage": "Part B rotation SSL"}
+[2026-10-06T14:32:07.939295+00:00] {"accuracy": 0.59314, "epoch": 6, "learning_rate": 0.00019635254915624213, "loss": 0.8115383632659912, "seconds": 97.32125091552734, "stage": "Part B rotation SSL"}
+[2026-10-06T14:33:46.540003+00:00] {"accuracy": 0.60274, "epoch": 7, "learning_rate": 0.00016567926949014806, "loss": 0.7901797996902465, "seconds": 98.13071990013123, "stage": "Part B rotation SSL"}
+[2026-10-06T14:35:26.749494+00:00] {"accuracy": 0.61029, "epoch": 8, "learning_rate": 0.00013432073050985205, "loss": 0.7703356963729858, "seconds": 99.62395167350769, "stage": "Part B rotation SSL"}
+[2026-10-06T14:37:05.124060+00:00] {"accuracy": 0.61782, "epoch": 9, "learning_rate": 0.00010364745084375793, "loss": 0.7503602344322204, "seconds": 97.96153950691223, "stage": "Part B rotation SSL"}
+[2026-10-06T14:38:46.338659+00:00] {"accuracy": 0.62517, "epoch": 10, "learning_rate": 7.500000000000006e-05, "loss": 0.7346899079704284, "seconds": 100.83077573776245, "stage": "Part B rotation SSL"}
+[2026-10-06T14:40:25.389193+00:00] {"accuracy": 0.63268, "epoch": 11, "learning_rate": 4.963040904617133e-05, "loss": 0.7176708890151977, "seconds": 98.57092499732971, "stage": "Part B rotation SSL"}
+[2026-10-06T14:42:06.630988+00:00] {"accuracy": 0.63802, "epoch": 12, "learning_rate": 2.8647450843757904e-05, "loss": 0.7006183815002441, "seconds": 100.84082698822021, "stage": "Part B rotation SSL"}
+[2026-10-06T14:43:45.065978+00:00] {"accuracy": 0.64069, "epoch": 13, "learning_rate": 1.2968181353609857e-05, "loss": 0.6940661795425415, "seconds": 97.92106771469116, "stage": "Part B rotation SSL"}
+[2026-10-06T14:45:24.961694+00:00] {"accuracy": 0.64328, "epoch": 14, "learning_rate": 3.2778598899291478e-06, "loss": 0.6839171117401123, "seconds": 99.52552962303162, "stage": "Part B rotation SSL"}
+[2026-10-06T14:47:04.356889+00:00] {"accuracy": 0.64497, "epoch": 15, "learning_rate": 0.0, "loss": 0.6806080319213867, "seconds": 98.86243534088135, "stage": "Part B rotation SSL"}
+[2026-10-06T14:47:05.431136+00:00] {"accuracy": 0.106, "epoch": 1, "learning_rate": 0.0993844170297569, "loss": 14.618897552490234, "seconds": 0.6584949493408203, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:06.182407+00:00] {"accuracy": 0.108, "epoch": 2, "learning_rate": 0.09755282581475769, "loss": 41.16937533569336, "seconds": 0.6269948482513428, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:07.032133+00:00] {"accuracy": 0.17, "epoch": 3, "learning_rate": 0.0945503262094184, "loss": 46.64877606201172, "seconds": 0.6948142051696777, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:08.094933+00:00] {"accuracy": 0.232, "epoch": 4, "learning_rate": 0.0904508497187474, "loss": 30.220635665893553, "seconds": 0.6514644622802734, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:08.866731+00:00] {"accuracy": 0.236, "epoch": 5, "learning_rate": 0.08535533905932739, "loss": 20.484027740478517, "seconds": 0.6210198402404785, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:09.883905+00:00] {"accuracy": 0.328, "epoch": 6, "learning_rate": 0.07938926261462367, "loss": 14.070347427368164, "seconds": 0.6040840148925781, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:11.332499+00:00] {"accuracy": 0.388, "epoch": 7, "learning_rate": 0.07269952498697735, "loss": 7.063953453063965, "seconds": 0.988480806350708, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:12.466322+00:00] {"accuracy": 0.416, "epoch": 8, "learning_rate": 0.06545084971874739, "loss": 5.090776113510132, "seconds": 0.9900476932525635, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:13.671253+00:00] {"accuracy": 0.456, "epoch": 9, "learning_rate": 0.05782172325201156, "loss": 3.6740517578125, "seconds": 0.981027364730835, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:14.962392+00:00] {"accuracy": 0.458, "epoch": 10, "learning_rate": 0.05000000000000001, "loss": 3.6454613494873045, "seconds": 0.8373503684997559, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:15.880477+00:00] {"accuracy": 0.458, "epoch": 11, "learning_rate": 0.04217827674798848, "loss": 3.418579107284546, "seconds": 0.7688381671905518, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:19.623426+00:00] {"accuracy": 0.474, "epoch": 12, "learning_rate": 0.03454915028125264, "loss": 3.746021158218384, "seconds": 0.6594438552856445, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:20.436764+00:00] {"accuracy": 0.52, "epoch": 13, "learning_rate": 0.027300475013022667, "loss": 2.543669066429138, "seconds": 0.6454544067382812, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:21.503897+00:00] {"accuracy": 0.518, "epoch": 14, "learning_rate": 0.020610737385376353, "loss": 2.3871607809066773, "seconds": 0.6466453075408936, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:22.347000+00:00] {"accuracy": 0.562, "epoch": 15, "learning_rate": 0.014644660940672629, "loss": 2.0193240299224855, "seconds": 0.6732432842254639, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:23.425356+00:00] {"accuracy": 0.536, "epoch": 16, "learning_rate": 0.009549150281252633, "loss": 2.02768946647644, "seconds": 0.661447286605835, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:24.246105+00:00] {"accuracy": 0.59, "epoch": 17, "learning_rate": 0.005449673790581611, "loss": 1.6088313083648682, "seconds": 0.660151481628418, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:25.682494+00:00] {"accuracy": 0.582, "epoch": 18, "learning_rate": 0.0024471741852423235, "loss": 1.5633195896148682, "seconds": 1.0148890018463135, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:26.953012+00:00] {"accuracy": 0.632, "epoch": 19, "learning_rate": 0.0006155829702431171, "loss": 1.5693718242645263, "seconds": 1.0255053043365479, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:28.146612+00:00] {"accuracy": 0.614, "epoch": 20, "learning_rate": 0.0, "loss": 1.468170991897583, "seconds": 0.967632532119751, "stage": "Part B rotation linear probe"}
+[2026-10-06T14:47:34.236133+00:00] Part B test_metrics={"accuracy": 0.469, "loss": 2.684259128570557}
+[2026-10-06T14:49:12.549456+00:00] {"accuracy": NaN, "epoch": 1, "learning_rate": 0.0002967221401100708, "loss": 3.1592890513248935, "seconds": 95.09041547775269, "stage": "Part C SimCLR"}
+[2026-10-06T14:50:48.865952+00:00] {"accuracy": NaN, "epoch": 2, "learning_rate": 0.0002870318186463901, "loss": 2.1980038468654337, "seconds": 95.90922498703003, "stage": "Part C SimCLR"}
+[2026-10-06T14:52:30.399927+00:00] {"accuracy": NaN, "epoch": 3, "learning_rate": 0.0002713525491562421, "loss": 2.0166295629281263, "seconds": 100.92555046081543, "stage": "Part C SimCLR"}
+[2026-10-06T14:54:09.097491+00:00] {"accuracy": NaN, "epoch": 4, "learning_rate": 0.00025036959095382875, "loss": 1.914869704307654, "seconds": 98.27963876724243, "stage": "Part C SimCLR"}
+[2026-10-06T14:55:49.460442+00:00] {"accuracy": NaN, "epoch": 5, "learning_rate": 0.00022500000000000002, "loss": 1.847269907211646, "seconds": 99.94102692604065, "stage": "Part C SimCLR"}
+[2026-10-06T14:57:30.379870+00:00] {"accuracy": NaN, "epoch": 6, "learning_rate": 0.00019635254915624213, "loss": 1.7929896192672925, "seconds": 100.3523576259613, "stage": "Part C SimCLR"}
+[2026-10-06T14:59:10.057082+00:00] {"accuracy": NaN, "epoch": 7, "learning_rate": 0.00016567926949014806, "loss": 1.7519862124553094, "seconds": 99.2756917476654, "stage": "Part C SimCLR"}
+[2026-10-06T15:00:52.358295+00:00] {"accuracy": NaN, "epoch": 8, "learning_rate": 0.00013432073050985205, "loss": 1.7172716214106634, "seconds": 101.88943123817444, "stage": "Part C SimCLR"}
+[2026-10-06T15:02:31.902467+00:00] {"accuracy": NaN, "epoch": 9, "learning_rate": 0.00010364745084375793, "loss": 1.689706223897445, "seconds": 99.07545948028564, "stage": "Part C SimCLR"}
+[2026-10-06T15:04:12.483946+00:00] {"accuracy": NaN, "epoch": 10, "learning_rate": 7.500000000000006e-05, "loss": 1.6668557203733003, "seconds": 100.08660626411438, "stage": "Part C SimCLR"}
+[2026-10-06T15:05:53.583760+00:00] {"accuracy": NaN, "epoch": 11, "learning_rate": 4.963040904617133e-05, "loss": 1.644689413217398, "seconds": 100.49994659423828, "stage": "Part C SimCLR"}
+[2026-10-06T15:07:33.462557+00:00] {"accuracy": NaN, "epoch": 12, "learning_rate": 2.8647450843757904e-05, "loss": 1.6298372455132313, "seconds": 99.45856213569641, "stage": "Part C SimCLR"}
+[2026-10-06T15:09:13.971823+00:00] {"accuracy": NaN, "epoch": 13, "learning_rate": 1.2968181353609857e-05, "loss": 1.6098811137370574, "seconds": 100.06898307800293, "stage": "Part C SimCLR"}
+[2026-10-06T15:10:54.228264+00:00] {"accuracy": NaN, "epoch": 14, "learning_rate": 3.2778598899291478e-06, "loss": 1.6044262853952556, "seconds": 99.65097570419312, "stage": "Part C SimCLR"}
+[2026-10-06T15:12:33.590569+00:00] {"accuracy": NaN, "epoch": 15, "learning_rate": 0.0, "loss": 1.6049715525064714, "seconds": 98.59713649749756, "stage": "Part C SimCLR"}
+[2026-10-06T15:12:34.706352+00:00] {"accuracy": 0.252, "epoch": 1, "learning_rate": 0.0993844170297569, "loss": 5.538170635223389, "seconds": 0.6617789268493652, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:12:35.533939+00:00] {"accuracy": 0.364, "epoch": 2, "learning_rate": 0.09755282581475769, "loss": 6.865084590911866, "seconds": 0.699089765548706, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:12:36.832996+00:00] {"accuracy": 0.382, "epoch": 3, "learning_rate": 0.0945503262094184, "loss": 6.003636596679687, "seconds": 1.0384914875030518, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:12:38.379893+00:00] {"accuracy": 0.436, "epoch": 4, "learning_rate": 0.0904508497187474, "loss": 5.022832748413086, "seconds": 1.0977299213409424, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:12:39.686366+00:00] {"accuracy": 0.442, "epoch": 5, "learning_rate": 0.08535533905932739, "loss": 4.478302707672119, "seconds": 1.0601170063018799, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:12:40.627194+00:00] {"accuracy": 0.53, "epoch": 6, "learning_rate": 0.07938926261462367, "loss": 3.887045108795166, "seconds": 0.7239813804626465, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:12:41.464855+00:00] {"accuracy": 0.526, "epoch": 7, "learning_rate": 0.07269952498697735, "loss": 2.9166478672027587, "seconds": 0.6431291103363037, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:12:42.517544+00:00] {"accuracy": 0.506, "epoch": 8, "learning_rate": 0.06545084971874739, "loss": 3.345775146484375, "seconds": 0.6387860774993896, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:12:43.330432+00:00] {"accuracy": 0.522, "epoch": 9, "learning_rate": 0.05782172325201156, "loss": 2.7205267124176027, "seconds": 0.6424355506896973, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:12:44.406664+00:00] {"accuracy": 0.596, "epoch": 10, "learning_rate": 0.05000000000000001, "loss": 2.4803045673370363, "seconds": 0.6384227275848389, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:12:45.359326+00:00] {"accuracy": 0.608, "epoch": 11, "learning_rate": 0.04217827674798848, "loss": 2.052214077949524, "seconds": 0.7659704685211182, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:12:49.229027+00:00] {"accuracy": 0.628, "epoch": 12, "learning_rate": 0.03454915028125264, "loss": 1.7573626823425292, "seconds": 0.6234841346740723, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:12:50.693730+00:00] {"accuracy": 0.626, "epoch": 13, "learning_rate": 0.027300475013022667, "loss": 1.565069010257721, "seconds": 0.9837698936462402, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:12:51.998081+00:00] {"accuracy": 0.65, "epoch": 14, "learning_rate": 0.020610737385376353, "loss": 1.330574026107788, "seconds": 1.1309921741485596, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:12:53.398941+00:00] {"accuracy": 0.682, "epoch": 15, "learning_rate": 0.014644660940672629, "loss": 1.227846773147583, "seconds": 1.150238275527954, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:12:54.694121+00:00] {"accuracy": 0.696, "epoch": 16, "learning_rate": 0.009549150281252633, "loss": 1.0758038711547853, "seconds": 1.0489943027496338, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:12:55.606641+00:00] {"accuracy": 0.736, "epoch": 17, "learning_rate": 0.005449673790581611, "loss": 0.9412996397018433, "seconds": 0.6803042888641357, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:12:56.709879+00:00] {"accuracy": 0.74, "epoch": 18, "learning_rate": 0.0024471741852423235, "loss": 0.7569263486862182, "seconds": 0.6650083065032959, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:12:57.547807+00:00] {"accuracy": 0.782, "epoch": 19, "learning_rate": 0.0006155829702431171, "loss": 0.6930909662246704, "seconds": 0.6500697135925293, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:12:58.600176+00:00] {"accuracy": 0.764, "epoch": 20, "learning_rate": 0.0, "loss": 0.6957002339363099, "seconds": 0.6343348026275635, "stage": "Part C SimCLR linear probe"}
+[2026-10-06T15:13:04.179124+00:00] Part C test_metrics={"accuracy": 0.436, "loss": 3.802184238433838}
+[2026-10-06T15:13:23.367681+00:00] Nearest-neighbor query_indices=[2698, 6367, 1836] query_classes=['horse', 'car', 'truck']
+[2026-10-06T15:13:31.764117+00:00] Analysis: The strongest test classifier was Rotation SSL + linear probe with 46.90% accuracy. All three methods used the same unpretrained ResNet-18 architecture and the same balanced 500-image labeled subset, so the main experimental difference was how each representation was learned.
+[2026-10-06T15:13:31.764165+00:00] Analysis: The supervised baseline achieved 36.20% accuracy. It received direct class supervision but only from 500 images, so it can learn task-specific boundaries while also being vulnerable to overfitting. Stronger regularization, tuned augmentation, longer scheduling, or additional labels could improve it.
+[2026-10-06T15:13:31.764188+00:00] Analysis: Rotation SSL achieved 46.90% accuracy after learning from all 100,000 unlabeled images. Rotation prediction encourages shape and orientation features, but the proxy task does not always align with semantic object categories. Longer pretraining, multi-task pretexts, or carefully tuned spatial augmentations could improve this representation.
+[2026-10-06T15:13:31.764209+00:00] Analysis: SimCLR achieved 43.60% accuracy after contrastive training on 20,000 unlabeled images. Its result depends on augmentation quality, batch negatives, training duration, and temperature. A larger batch, more pretraining epochs, a learning-rate warmup, or a larger unlabeled subset could improve it.
+[2026-10-06T15:13:31.764228+00:00] Analysis: The nearest-neighbor visualizations used identical queries and cosine similarity for all encoders. SimCLR + linear probe had the highest top-5 label purity at 46.67%. Rows containing visually and semantically consistent neighbors indicate a representation that clusters class-relevant features; mismatched neighbors reveal sensitivity to background, color, pose, or low-level texture.
+[2026-10-06T15:13:33.121774+00:00] Saved final artifacts to /content/drive/MyDrive/DATA266_HW6_6441/HW6_STL10_SSL_Nikhil_Kanaparthi_6441
