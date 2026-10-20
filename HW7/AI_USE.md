@@ -1,0 +1,3 @@
+# AI Use - Homework 7
+
+I used an AI assistant to develop a first-cut notebook structure, translate the assignment requirements into an executable experiment, and debug the training and evaluation workflow. It helped me understand the GAN minimax objective, mode collapse, the distinction between deterministic and variational autoencoders, and how to compare the models with common metrics. I ran the notebook, reviewed the outputs and generated images, checked the saved metrics against the displayed results, and revised the final explanations so I could describe the methods and conclusions in my own words.
