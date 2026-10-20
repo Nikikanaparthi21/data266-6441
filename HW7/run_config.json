@@ -1,0 +1,24 @@
+{
+  "student": "Nikhil Kanaparthi",
+  "SID4": 6441,
+  "SEED": 6441,
+  "SLICE": 441,
+  "HP_ID": 1,
+  "CLS_A": 1,
+  "CLS_B": 4,
+  "dataset": "FashionMNIST",
+  "models": [
+    "Fully Connected Autoencoder",
+    "Variational Autoencoder"
+  ],
+  "latent_dim": 32,
+  "batch_size": 512,
+  "epochs_fc_ae": 15,
+  "epochs_vae": 15,
+  "learning_rate": 0.001,
+  "vae_beta": 1.0,
+  "train_size": 54000,
+  "validation_size": 6000,
+  "test_size": 10000,
+  "fast_dev_run": false
+}
