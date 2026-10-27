@@ -1,0 +1,11 @@
+Student: Nikhil Kanaparthi
+SID4: 6441
+Hardware: Tesla T4
+FAST_DEV_RUN: False
+Epochs completed: 50
+Final training MSE: 0.05900955
+Training seconds: 1022.161
+DDPM-100 seconds: 0.530
+DDIM-50 seconds: 0.235
+DDIM-20 seconds: 0.095
+Status: PASS

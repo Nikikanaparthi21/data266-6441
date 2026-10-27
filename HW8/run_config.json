@@ -1,0 +1,22 @@
+{
+  "student": "Nikhil Kanaparthi",
+  "SID4": 6441,
+  "seed": 6441,
+  "dataset": "MNIST",
+  "diffusion_steps": 100,
+  "beta_schedule": "linear",
+  "beta_start": 0.0001,
+  "beta_end": 0.02,
+  "batch_size": 128,
+  "epochs_requested": 50,
+  "epochs_completed": 50,
+  "learning_rate": 0.0002,
+  "generated_images_per_sampler": 64,
+  "ddpm_steps": 100,
+  "ddim_step_counts": [
+    50,
+    20
+  ],
+  "ddim_eta": 0.0,
+  "fast_dev_run": false
+}
