@@ -1,0 +1,2 @@
+label,status,batch_size,physical_batch_size,effective_batch_size,gradient_accumulation,use_amp,checkpointing,use_8bit,optimizer,epochs,seconds,seconds_per_epoch,samples_per_second,peak_memory_gb,validation_accuracy,test_accuracy,best_epoch,model_dir
+best_combination_batch_128,success,128,128,256,2,True,True,True,bitsandbytes Adam8bit,2,69.14967794099994,34.57483897049997,101.22968332509889,4.1796875,0.8266666666666667,0.8013333333333333,2,/content/HW4_5_outputs/models/best_combination_batch_128

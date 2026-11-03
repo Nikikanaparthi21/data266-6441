@@ -1,0 +1,5 @@
+{
+  "installed": true,
+  "initialized": false,
+  "error": "vLLM initialization or benchmark failed: cannot import name 'aggregate' from 'triton' (/usr/local/lib/python3.13/dist-packages/triton/__init__.py)"
+}

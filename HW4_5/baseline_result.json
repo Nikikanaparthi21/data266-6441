@@ -1,0 +1,21 @@
+{
+  "label": "baseline",
+  "status": "success",
+  "batch_size": 16,
+  "physical_batch_size": 16,
+  "effective_batch_size": 16,
+  "gradient_accumulation": 1,
+  "use_amp": false,
+  "checkpointing": false,
+  "use_8bit": false,
+  "optimizer": "AdamW",
+  "epochs": 2,
+  "seconds": 188.333063746,
+  "seconds_per_epoch": 94.166531873,
+  "samples_per_second": 37.16819479685586,
+  "peak_memory_gb": 2.81640625,
+  "validation_accuracy": 0.8666666666666667,
+  "test_accuracy": 0.86,
+  "best_epoch": 2,
+  "model_dir": "/content/HW4_5_outputs/models/baseline"
+}

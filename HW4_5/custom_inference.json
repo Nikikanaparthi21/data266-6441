@@ -1,0 +1,10 @@
+[
+  {
+    "text": "I enjoyed the story, the acting was strong, and I would recommend this movie.",
+    "predicted_sentiment": "positive"
+  },
+  {
+    "text": "The movie was slow, confusing, and not worth the time.",
+    "predicted_sentiment": "negative"
+  }
+]

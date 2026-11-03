@@ -1,0 +1,2 @@
+configuration,batch_size,tokens_per_second,p50_latency_ms,p95_latency_ms,status
+HF pipeline batch 1,1,62.20731757748255,295.87676599931,587.7710399002353,success
