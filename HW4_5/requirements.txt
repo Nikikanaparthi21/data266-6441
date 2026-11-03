@@ -1,0 +1,8 @@
+transformers
+datasets
+accelerate
+scikit-learn
+seaborn
+bitsandbytes
+sentencepiece
+vllm

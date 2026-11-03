@@ -1,0 +1,9 @@
+{
+  "gpu_name": "Tesla T4",
+  "gpu_uuid": "GPU-ef1369de-78dd-c684-4e6a-c14668cb81c9",
+  "driver_version": "580.82.07",
+  "cuda_version": "13.0",
+  "vram_gib": 14.563,
+  "compute_capability": "7.5",
+  "run_start_utc": "2026-11-03T02:58:10.219825+00:00"
+}

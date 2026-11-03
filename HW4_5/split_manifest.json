@@ -1,0 +1,15 @@
+{
+  "dataset": "IMDB Dataset.csv",
+  "columns": [
+    "review",
+    "sentiment"
+  ],
+  "slice_start_zero_based": 441,
+  "slice_end_zero_based_inclusive": 5440,
+  "rows_used": 5000,
+  "split_rule": "70% train, 15% validation, 15% test",
+  "seed": 6441,
+  "train_rows": 3500,
+  "validation_rows": 750,
+  "test_rows": 750
+}
