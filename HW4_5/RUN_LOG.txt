@@ -1,0 +1,6 @@
+[2026-11-03T02:58:10.683681+00:00] I started HW4.5 on Tesla T4; UUID=GPU-ef1369de-78dd-c684-4e6a-c14668cb81c9; CUDA=13.0
+[2026-11-03T02:58:13.402568+00:00] I used dataset rows 441-5440 inclusive with seed 6441.
+[2026-11-03T02:58:32.005607+00:00] I created the fixed tensor datasets with the same split used for every experiment.
+[2026-11-03T03:02:23.894355+00:00] I completed the HW4.a-equivalent baseline and saved its wall-clock and peak-memory measurements.
+[2026-11-03T03:13:12.681936+00:00] My largest successful baseline batch was 128.
+[2026-11-03T04:42:10.882483+00:00] I generated the first-person report, METRICS.md, AI_USE.md, GPU-hour record, reservation record, and requirements.txt.
