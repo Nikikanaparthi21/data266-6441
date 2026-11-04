@@ -1,0 +1,6 @@
+{
+  "conditional_prediction_rms": 0.9975590705871582,
+  "unconditional_prediction_rms": 0.9952810406684875,
+  "guided_prediction_rms": 1.0061028003692627,
+  "guidance_scale": 3.0
+}

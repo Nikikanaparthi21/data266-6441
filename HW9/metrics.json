@@ -1,0 +1,16 @@
+{
+  "vae_reconstruction_mse": 0.0006073939148336649,
+  "final_train_noise_mse": 0.10047931772470474,
+  "final_validation_noise_mse": 0.10219185214042664,
+  "best_validation_noise_mse": 0.0994340169429779,
+  "best_validation_epoch": 48,
+  "mean_observed_label_drop_fraction": 0.09977233333333334,
+  "conditional_sample_count": 64,
+  "guidance_scale": 3.0,
+  "diffusion_timesteps": 1000,
+  "model_parameters": 11717636,
+  "saved_model_size_mib": 22.369583129882812,
+  "latent_cache_seconds": 463.716676652,
+  "training_seconds_this_session": 2468.511736597,
+  "sampling_seconds": 35.481023151000045
+}

@@ -1,0 +1,17 @@
+{
+  "model": "stabilityai/sd-vae-ft-mse",
+  "latent_scale": 0.18215,
+  "input_shape": [
+    16,
+    3,
+    128,
+    128
+  ],
+  "latent_shape": [
+    16,
+    4,
+    16,
+    16
+  ],
+  "mse_on_normalized_pixels": 0.0006073939148336649
+}
