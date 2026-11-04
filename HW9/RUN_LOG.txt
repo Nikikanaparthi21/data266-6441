@@ -1,0 +1,10 @@
+2026-11-03T23:20:07.912686+00:00 | Student=Nikhil Kanaparthi; SID4=6441; SEED=6441; SLICE=441; HP_ID=4
+2026-11-03T23:20:07.912890+00:00 | Device=cuda; GPU=Tesla T4; GPU memory=14.56 GiB
+2026-11-03T23:20:07.912971+00:00 | Output directory=/content/HW9_outputs
+2026-11-03T23:20:39.434410+00:00 | VAE reconstruction MSE=0.00060739
+2026-11-03T23:28:23.694188+00:00 | Cached 60000 train and 10000 test latents in 463.72s
+2026-11-03T23:28:46.491520+00:00 | Created ConditionalLatentUNet with 11,717,636 parameters
+2026-11-03T23:28:46.520068+00:00 | Starting diffusion training from epoch 1
+2026-11-04T00:09:55.032219+00:00 | Completed 50 epochs; final train MSE=0.10047932; final validation MSE=0.10219185; this-session training seconds=2468.51
+2026-11-04T00:10:52.589494+00:00 | Generated 64 conditional samples with w=3.0 in 35.48s
+2026-11-04T00:10:52.618337+00:00 | Final metrics: {"best_validation_epoch": 48, "best_validation_noise_mse": 0.0994340169429779, "conditional_sample_count": 64, "diffusion_timesteps": 1000, "final_train_noise_mse": 0.10047931772470474, "final_validation_noise_mse": 0.10219185214042664, "guidance_scale": 3.0, "latent_cache_seconds": 463.716676652, "mean_observed_label_drop_fraction": 0.09977233333333334, "model_parameters": 11717636, "sampling_seconds": 35.481023151000045, "saved_model_size_mib": 22.369583129882812, "training_seconds_this_session": 2468.511736597, "vae_reconstruction_mse": 0.0006073939148336649}
