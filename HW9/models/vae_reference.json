@@ -1,0 +1,6 @@
+{
+  "pretrained_model": "stabilityai/sd-vae-ft-mse",
+  "latent_scaling_factor": 0.18215,
+  "frozen": true,
+  "weights_not_duplicated": true
+}
