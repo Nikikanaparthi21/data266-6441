@@ -1,0 +1,17 @@
+strategy,query_id,type,reranking,memory,k,gold_chunks,latency_ms,precision_at_k,recall_at_k,mrr
+fixed,Q1,standalone,False,False,5,18,10.791794000056143,1.0,0.2777777777777778,1.0
+fixed,Q1,standalone,True,False,5,18,71.6388260000258,1.0,0.2777777777777778,1.0
+fixed,Q2,standalone,False,False,5,22,9.198482000101649,1.0,0.22727272727272727,1.0
+fixed,Q2,standalone,True,False,5,22,74.98447400007535,1.0,0.22727272727272727,1.0
+fixed,FOLLOWUP,followup,False,False,5,22,8.790660999920874,0.8,0.18181818181818182,1.0
+fixed,FOLLOWUP,followup,True,False,5,22,66.94475899996633,1.0,0.22727272727272727,1.0
+fixed,FOLLOWUP,followup,False,True,5,22,10.860200000024633,1.0,0.22727272727272727,1.0
+fixed,FOLLOWUP,followup,True,True,5,22,82.36226600001828,1.0,0.22727272727272727,1.0
+paragraph,Q1,standalone,False,False,5,19,11.508207000019866,1.0,0.2631578947368421,1.0
+paragraph,Q1,standalone,True,False,5,19,85.36495100008779,1.0,0.2631578947368421,1.0
+paragraph,Q2,standalone,False,False,5,20,9.163464000039312,1.0,0.25,1.0
+paragraph,Q2,standalone,True,False,5,20,66.4915680000604,1.0,0.25,1.0
+paragraph,FOLLOWUP,followup,False,False,5,20,8.738946999983455,0.6,0.15,1.0
+paragraph,FOLLOWUP,followup,True,False,5,20,64.69340599994666,0.6,0.15,0.5
+paragraph,FOLLOWUP,followup,False,True,5,20,9.366292999970938,1.0,0.25,1.0
+paragraph,FOLLOWUP,followup,True,True,5,20,67.29712899993956,1.0,0.25,1.0

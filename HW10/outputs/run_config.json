@@ -1,0 +1,23 @@
+{
+  "sid4": "6441",
+  "seed": 6441,
+  "slice": 441,
+  "hp_id": 3,
+  "cls_a": 1,
+  "cls_b": 7,
+  "dataset": "ccdv/arxiv-summarization",
+  "config": "document",
+  "split": "train",
+  "first_n": 100,
+  "chunk_size": 1300,
+  "chunk_overlap": 180,
+  "top_k": 5,
+  "candidate_k": 20,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "reranker": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "python": "3.13.16",
+  "torch": "2.14.1+cu130",
+  "chromadb": "1.5.9",
+  "device": "cuda",
+  "run_ended_utc": "2026-11-10T20:51:13.091350+00:00"
+}
