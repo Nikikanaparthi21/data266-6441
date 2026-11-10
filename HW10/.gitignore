@@ -1,0 +1,14 @@
+# Machine-dependent caches, model files, and large vector DB
+__pycache__/
+.ipynb_checkpoints/
+.cache/
+.huggingface/
+.env
+*.pyc
+outputs/chromadb_local/
+*.parquet
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+# Executed notebooks, lightweight CSV evidence, charts and logs SHOULD be committed.
