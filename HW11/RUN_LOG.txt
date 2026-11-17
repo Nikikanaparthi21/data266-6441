@@ -1,0 +1,27 @@
+[2026-11-17T22:20:02.363310+00:00] Started HW11 for Nikhil Kanaparthi; SID4=6441; seed=6441
+[2026-11-17T22:20:02.370589+00:00] Device=cuda; hardware=Tesla T4; batch_size=64
+[2026-11-17T22:32:57.745915+00:00] Selected exactly 100 test images from each CIFAR-10 class
+[2026-11-17T22:33:08.365695+00:00] Loaded openai/clip-vit-base-patch32 with 151,277,313 parameters
+[2026-11-17T22:33:16.520337+00:00] Encoded and normalized 1,000 images in 8.129 seconds
+[2026-11-17T22:33:16.659622+00:00] Encoded caption for target class 'automobile': 'a clear color photograph of a car'
+[2026-11-17T22:33:16.720662+00:00] Computed and saved all 1,000 caption–image cosine similarities
+[2026-11-17T22:33:19.438371+00:00] Created normalized zero-shot text prototypes using five prompts per class
+[2026-11-17T22:33:19.555036+00:00] Completed zero-shot classification; overall_accuracy=0.895000
+[2026-11-17T22:33:20.043788+00:00] Calculated and saved per-class accuracy and classification report
+[2026-11-17T22:33:20.897787+00:00] Saved confusion matrices; largest confusion=deer → horse (18 of 100 images)
+[2026-11-17T22:33:21.900031+00:00] Saved final metrics, findings, AI-use statement, and reproducibility metadata
+
+METRICS SUMMARY
+{"best_class": "horse", "best_class_accuracy": 0.98, "caption": "a clear color photograph of a car", "caption_target_class": "automobile", "image_embedding_seconds": 8.128574865000019, "largest_confusion": "deer \u2192 horse (18 of 100 images)", "non_target_mean_similarity": 0.19429311156272888, "target_class_mean_similarity": 0.2518493166565895, "target_class_rank_by_mean_similarity": 1, "target_fraction_among_top_20": 1.0, "target_vs_non_target_gap": 0.05755620509386061, "worst_class": "frog", "worst_class_accuracy": 0.76, "zero_shot_overall_accuracy": 0.895}
+
+PER-CLASS ACCURACY
+{"class_id":0,"class_name":"airplane","correct":93,"total":100,"accuracy":0.93}
+{"class_id":1,"class_name":"automobile","correct":94,"total":100,"accuracy":0.94}
+{"class_id":2,"class_name":"bird","correct":87,"total":100,"accuracy":0.87}
+{"class_id":3,"class_name":"cat","correct":89,"total":100,"accuracy":0.89}
+{"class_id":4,"class_name":"deer","correct":79,"total":100,"accuracy":0.79}
+{"class_id":5,"class_name":"dog","correct":90,"total":100,"accuracy":0.9}
+{"class_id":6,"class_name":"frog","correct":76,"total":100,"accuracy":0.76}
+{"class_id":7,"class_name":"horse","correct":98,"total":100,"accuracy":0.98}
+{"class_id":8,"class_name":"ship","correct":92,"total":100,"accuracy":0.92}
+{"class_id":9,"class_name":"truck","correct":97,"total":100,"accuracy":0.97}

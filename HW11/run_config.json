@@ -1,0 +1,36 @@
+{
+  "student": "Nikhil Kanaparthi",
+  "SID4": 6441,
+  "seed": 6441,
+  "dataset": "torchvision.datasets.CIFAR10",
+  "split": "test",
+  "classes": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ],
+  "images_per_class": 100,
+  "total_images": 1000,
+  "selection": "seeded sample without replacement within each class",
+  "model": "openai/clip-vit-base-patch32",
+  "batch_size": 64,
+  "embedding_dimension": 512,
+  "caption": "a clear color photograph of a car",
+  "target_class_id": 1,
+  "target_class_name": "automobile",
+  "zero_shot_templates": [
+    "a photo of {}",
+    "a clear photo of {}",
+    "a close-up photo of {}",
+    "a small photo of {}",
+    "a color image of {}"
+  ],
+  "fine_tuning": false
+}
