@@ -1,0 +1,51 @@
+class_id,class_name,template_id,prompt
+0,airplane,0,a photo of an airplane
+0,airplane,1,a clear photo of an airplane
+0,airplane,2,a close-up photo of an airplane
+0,airplane,3,a small photo of an airplane
+0,airplane,4,a color image of an airplane
+1,automobile,0,a photo of a car
+1,automobile,1,a clear photo of a car
+1,automobile,2,a close-up photo of a car
+1,automobile,3,a small photo of a car
+1,automobile,4,a color image of a car
+2,bird,0,a photo of a bird
+2,bird,1,a clear photo of a bird
+2,bird,2,a close-up photo of a bird
+2,bird,3,a small photo of a bird
+2,bird,4,a color image of a bird
+3,cat,0,a photo of a cat
+3,cat,1,a clear photo of a cat
+3,cat,2,a close-up photo of a cat
+3,cat,3,a small photo of a cat
+3,cat,4,a color image of a cat
+4,deer,0,a photo of a deer
+4,deer,1,a clear photo of a deer
+4,deer,2,a close-up photo of a deer
+4,deer,3,a small photo of a deer
+4,deer,4,a color image of a deer
+5,dog,0,a photo of a dog
+5,dog,1,a clear photo of a dog
+5,dog,2,a close-up photo of a dog
+5,dog,3,a small photo of a dog
+5,dog,4,a color image of a dog
+6,frog,0,a photo of a frog
+6,frog,1,a clear photo of a frog
+6,frog,2,a close-up photo of a frog
+6,frog,3,a small photo of a frog
+6,frog,4,a color image of a frog
+7,horse,0,a photo of a horse
+7,horse,1,a clear photo of a horse
+7,horse,2,a close-up photo of a horse
+7,horse,3,a small photo of a horse
+7,horse,4,a color image of a horse
+8,ship,0,a photo of a ship
+8,ship,1,a clear photo of a ship
+8,ship,2,a close-up photo of a ship
+8,ship,3,a small photo of a ship
+8,ship,4,a color image of a ship
+9,truck,0,a photo of a truck
+9,truck,1,a clear photo of a truck
+9,truck,2,a close-up photo of a truck
+9,truck,3,a small photo of a truck
+9,truck,4,a color image of a truck

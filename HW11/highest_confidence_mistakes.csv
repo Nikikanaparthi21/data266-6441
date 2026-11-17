@@ -1,0 +1,11 @@
+selection_position,dataset_index,true_class_id,true_class_name,predicted_class_id,predicted_class_name,confidence,correct
+868,7217,8,ship,0,airplane,0.9719472,False
+495,9511,4,deer,7,horse,0.95799243,False
+181,7892,1,automobile,9,truck,0.9383114,False
+420,1423,4,deer,7,horse,0.9161727,False
+211,1043,2,bird,7,horse,0.9137314,False
+443,4002,4,deer,7,horse,0.90011007,False
+468,6228,4,deer,7,horse,0.8993253,False
+551,6183,5,dog,3,cat,0.8927839,False
+454,5031,4,deer,7,horse,0.88490915,False
+545,5673,5,dog,7,horse,0.884793,False

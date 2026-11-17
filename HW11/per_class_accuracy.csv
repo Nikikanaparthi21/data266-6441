@@ -1,0 +1,11 @@
+class_id,class_name,correct,total,accuracy
+0,airplane,93,100,0.93
+1,automobile,94,100,0.94
+2,bird,87,100,0.87
+3,cat,89,100,0.89
+4,deer,79,100,0.79
+5,dog,90,100,0.9
+6,frog,76,100,0.76
+7,horse,98,100,0.98
+8,ship,92,100,0.92
+9,truck,97,100,0.97

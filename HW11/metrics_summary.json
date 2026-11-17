@@ -1,0 +1,16 @@
+{
+  "caption": "a clear color photograph of a car",
+  "caption_target_class": "automobile",
+  "target_class_mean_similarity": 0.2518493166565895,
+  "non_target_mean_similarity": 0.19429311156272888,
+  "target_vs_non_target_gap": 0.05755620509386061,
+  "target_class_rank_by_mean_similarity": 1,
+  "target_fraction_among_top_20": 1.0,
+  "zero_shot_overall_accuracy": 0.895,
+  "best_class": "horse",
+  "best_class_accuracy": 0.98,
+  "worst_class": "frog",
+  "worst_class_accuracy": 0.76,
+  "largest_confusion": "deer \u2192 horse (18 of 100 images)",
+  "image_embedding_seconds": 8.128574865000019
+}
